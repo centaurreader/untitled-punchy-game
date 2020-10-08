@@ -18,6 +18,9 @@ const Game = ({
     docRef.get().then((doc) => {
       setGame(doc.data());
     });
+    docRef.onSnapshot((doc) => {
+      setGame(doc.data());
+    });
   }, []);
 
   if (!game) {
@@ -31,7 +34,7 @@ const Game = ({
         <h2>Players</h2>
         <ul>
           {game.players.map((player) => (
-            <li>{player}</li>
+            <li key={player}>{player}</li>
           ))}
         </ul>
       </section>
