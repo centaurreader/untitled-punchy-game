@@ -1,4 +1,8 @@
-import React from 'react';
+import React, {
+  useEffect,
+  useState,
+} from 'react';
+import { db } from './services/Database';
 
 const Game = ({
   match: {
@@ -7,14 +11,28 @@ const Game = ({
     },
   },
 }) => {
+  const [game, setGame] = useState(null);
+
+  useEffect(() => {
+    const docRef = db.collection('games').doc(id);
+    docRef.get().then((doc) => {
+      setGame(doc.data());
+    });
+  }, []);
+
+  if (!game) {
+    return null;
+  }
+
   return (
     <>
       <h1>Game ID {id}</h1>
-      <p>Current turn: [player name]</p>
       <section>
         <h2>Players</h2>
         <ul>
-          <li>[player name]</li>
+          {game.players.map((player) => (
+            <li>{player}</li>
+          ))}
         </ul>
       </section>
     </>
