@@ -1,7 +1,8 @@
 import React, {
   useState,
 } from 'react';
-import { db } from './services/Database';
+import { nanoid } from 'nanoid';
+import { db } from '../services/Database';
 
 const Home = ({
   history,
@@ -20,7 +21,7 @@ const Home = ({
       docRef.update({
         players: [
           ...doc.data().players,
-          name,
+          { name, id: nanoid(), },
         ],
       }).then(() => {
         history.push(`/games/${doc.id}`);
@@ -34,11 +35,13 @@ const Home = ({
     if (!name) {
       alert('need a name');
     }
+    const player = {
+      name,
+      id: nanoid(),
+    };
     db.collection('games').add({
-      currentTurn: name,
-      players: [
-        name,
-      ],
+      currentTurn: player.id,
+      players: [player],
     })
     .then((docRef) => {
       history.push(`/games/${docRef.id}`);

@@ -4,8 +4,8 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-import Game from './Game';
-import Home from './Home';
+import Game from './views/Game';
+import Home from './views/Home';
 
 const App = () => (
   <BrowserRouter>
