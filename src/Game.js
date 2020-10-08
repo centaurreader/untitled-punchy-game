@@ -23,6 +23,18 @@ const Game = ({
     });
   }, []);
 
+  const endTurn = () => {
+    const docRef = db.collection('games').doc(id);
+    docRef.get().then((doc) => {
+      const players = doc.data().players;
+      const currentPlayerIndex = players.indexOf(doc.data().currentTurn);
+      const nextPlayer = players[currentPlayerIndex === (players.length - 1) ? 0 : currentPlayerIndex + 1];
+      docRef.update({
+        currentTurn: nextPlayer,
+      });
+    });
+  }
+
   if (!game) {
     return null;
   }
@@ -30,11 +42,14 @@ const Game = ({
   return (
     <>
       <h1>Game ID {id}</h1>
+      <button type="button" onClick={endTurn}>End Turn</button>
       <section>
         <h2>Players</h2>
         <ul>
           {game.players.map((player) => (
-            <li key={player}>{player}</li>
+            <li key={player}>
+              {player}{game.currentTurn === player ? (' [Turn]') : null}
+            </li>
           ))}
         </ul>
       </section>

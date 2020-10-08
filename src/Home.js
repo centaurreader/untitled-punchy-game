@@ -35,6 +35,7 @@ const Home = ({
       alert('need a name');
     }
     db.collection('games').add({
+      currentTurn: name,
       players: [
         name,
       ],
