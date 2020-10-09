@@ -51,10 +51,12 @@ const Game: React.FunctionComponent<Props> = ({
       const currentPlayerIndex = players.indexOf(currentPlayer);
       const isRoundOver = currentPlayerIndex === (players.length - 1);
       const nextPlayer = players[isRoundOver ? 0 : currentPlayerIndex + 1];
-      docRef.update({
+      const updatedGame: Game = {
         currentPlayer: nextPlayer.id,
         currentTurn: isRoundOver ? (data.currentTurn + 1) : data.currentTurn,
-      });
+        players,
+      };
+      docRef.update(updatedGame);
     });
   };
 
