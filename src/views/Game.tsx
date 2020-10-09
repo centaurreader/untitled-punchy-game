@@ -18,15 +18,24 @@ const Game: React.FunctionComponent<Props> = ({
     },
   },
 }) => {
-  const [game, setGame] = useState<firebase.firestore.DocumentData | undefined>(undefined);
+  const [game, setGame] = useState<Game | undefined>(undefined);
 
   useEffect(() => {
+    function documentDataToGame(documentData: firebase.firestore.DocumentData): Game {
+      const data = documentData.data() || {};
+      return {
+        currentPlayer: data.currentPlayer,
+        currentTurn: data.currentTurn,
+        players: data.players,
+      };
+    }
+
     const docRef = db.collection('games').doc(id);
     docRef.get().then((doc) => {
-      setGame(doc.data());
+      setGame(documentDataToGame(doc));
     });
     docRef.onSnapshot((doc) => {
-      setGame(doc.data());
+      setGame(documentDataToGame(doc));
     });
   }, []);
 

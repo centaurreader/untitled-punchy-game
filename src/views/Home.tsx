@@ -23,12 +23,15 @@ const Home: React.FunctionComponent<Props> = ({
     const docRef = db.collection('games').doc(gameId);
     docRef.get().then((doc) => {
       const data = doc.data() ?? {};
-      docRef.update({
+      const game: Game = {
+        currentPlayer: data.currentPlayer,
+        currentTurn: data.currentTurn,
         players: [
           ...data.players,
           { name, id: nanoid(), },
         ],
-      }).then(() => {
+      };
+      docRef.update(game).then(() => {
         history.push(`/games/${doc.id}`);
       });
     })
@@ -44,11 +47,12 @@ const Home: React.FunctionComponent<Props> = ({
       name,
       id: nanoid(),
     };
-    db.collection('games').add({
+    const game: Game = {
       currentPlayer: player.id,
       currentTurn: 0,
       players: [player],
-    })
+    };
+    db.collection('games').add(game)
     .then((docRef) => {
       history.push(`/games/${docRef.id}`);
     });
