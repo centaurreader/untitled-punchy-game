@@ -1,16 +1,20 @@
 import React, {
+  FormEvent,
   useState,
 } from 'react';
+import { RouteComponentProps  } from 'react-router';
 import { nanoid } from 'nanoid';
 import { db } from '../services/Database';
 
-const Home = ({
+interface Props extends RouteComponentProps<any> {}
+
+const Home: React.FunctionComponent<Props> = ({
   history,
 }) => {
   const [gameId, setGameId] = useState('');
   const [name, setName] = useState('');
 
-  const joinGame = (event) => {
+  const joinGame = (event: FormEvent) => {
     event.preventDefault();
 
     if (!name || !gameId) {
@@ -18,9 +22,10 @@ const Home = ({
     }
     const docRef = db.collection('games').doc(gameId);
     docRef.get().then((doc) => {
+      const data = doc.data() ?? {};
       docRef.update({
         players: [
-          ...doc.data().players,
+          ...data.players,
           { name, id: nanoid(), },
         ],
       }).then(() => {
@@ -29,7 +34,7 @@ const Home = ({
     })
   };
 
-  const createGame = (event) => {
+  const createGame = (event: React.MouseEvent) => {
     event.preventDefault();
 
     if (!name) {
@@ -40,7 +45,8 @@ const Home = ({
       id: nanoid(),
     };
     db.collection('games').add({
-      currentTurn: player.id,
+      currentPlayer: player.id,
+      currentTurn: 0,
       players: [player],
     })
     .then((docRef) => {

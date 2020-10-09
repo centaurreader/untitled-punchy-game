@@ -2,17 +2,23 @@ import React, {
   useEffect,
   useState,
 } from 'react';
+import { RouteComponentProps  } from 'react-router';
 import CharacterCard from '../components/CharacterCard';
 import { db } from '../services/Database';
 
-const Game = ({
+interface MatchParams {
+  id: string;
+}
+interface Props extends RouteComponentProps<MatchParams> {}
+
+const Game: React.FunctionComponent<Props> = ({
   match: {
     params: {
       id,
     },
   },
 }) => {
-  const [game, setGame] = useState(null);
+  const [game, setGame] = useState<firebase.firestore.DocumentData | undefined>(undefined);
 
   useEffect(() => {
     const docRef = db.collection('games').doc(id);
@@ -27,15 +33,21 @@ const Game = ({
   const endTurn = () => {
     const docRef = db.collection('games').doc(id);
     docRef.get().then((doc) => {
-      const players = doc.data().players;
-      const currentPlayer = players.find((player) => player.id === game.currentTurn);
+      const data = doc.data();
+      if (!data) {
+        return;
+      }
+      const players = data.players;
+      const currentPlayer = players.find((player: Player) => player.id === data.currentPlayer);
       const currentPlayerIndex = players.indexOf(currentPlayer);
-      const nextPlayer = players[currentPlayerIndex === (players.length - 1) ? 0 : currentPlayerIndex + 1];
+      const isRoundOver = currentPlayerIndex === (players.length - 1);
+      const nextPlayer = players[isRoundOver ? 0 : currentPlayerIndex + 1];
       docRef.update({
-        currentTurn: nextPlayer.id,
+        currentPlayer: nextPlayer.id,
+        currentTurn: isRoundOver ? (data.currentTurn + 1) : data.currentTurn,
       });
     });
-  }
+  };
 
   if (!game) {
     return null;
@@ -48,16 +60,20 @@ const Game = ({
         <div className="game_zone--main">
           <section>
             <h2>Play Area</h2>
-            <CharacterCard />
+            <CharacterCard
+              name="Mutant Man"
+              health="21"
+              moves={[]}
+            />
           </section>
         </div>
         <div className="game_zone--sidebar">
           <section>
             <h2>Players</h2>
             <ul>
-              {game.players.map((player) => (
+              {game.players.map((player: Player) => (
                 <li key={player.id}>
-                  {player.name}{game.currentTurn === player.id ? (' [Turn]') : null}
+                  {player.name}{game.currentPlayer === player.id ? (' [Turn]') : null}
                 </li>
               ))}
             </ul>

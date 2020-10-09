@@ -1,7 +1,7 @@
 import firebase from 'firebase';
 import 'firebase/firestore';
 
-var firebaseConfig = {
+const firebaseConfig = {
   apiKey: "AIzaSyCfVHHk-StotV9omjcBy56ngtniVX4vdu4",
   authDomain: "untitled-punchy-game.firebaseapp.com",
   databaseURL: "https://untitled-punchy-game.firebaseio.com",

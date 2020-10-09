@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Mutant Man",
+    "health": "20",
+    "moves": []
+  },
+  {
+    "name": "Gold Man",
+    "health": "20",
+    "moves": []
+  }
+  {
+    "name": "Big Man",
+    "health": "20",
+    "moves": []
+  },
+  {
+    "name": "Golem",
+    "health": "20",
+    "moves": []
+  },
+  {
+    "name": "Strong Man",
+    "health": "20",
+    "moves": []
+  },
+  {
+    "name": "Alien Monster",
+    "health": "20",
+    "moves": []
+  },
+  {
+    "name": "Cyber Man",
+    "health": "20",
+    "moves": []
+  },
+  {
+    "name": "Female Sword Man",
+    "health": "20",
+    "moves": []
+  },
+  {
+    "name": "Sword Man",
+    "health": "20",
+    "moves": []
+  },
+  {
+    "name": "Warrior",
+    "health": "20",
+    "moves": []
+  },
+  {
+    "name": "Skeleton",
+    "health": "20",
+    "moves": []
+  }
+]
