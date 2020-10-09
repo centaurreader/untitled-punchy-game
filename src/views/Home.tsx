@@ -6,9 +6,7 @@ import { RouteComponentProps  } from 'react-router';
 import { nanoid } from 'nanoid';
 import { db } from '../services/Database';
 
-interface Props extends RouteComponentProps<any> {}
-
-const Home: React.FunctionComponent<Props> = ({
+const Home: React.FunctionComponent<RouteComponentProps<any>> = ({
   history,
 }) => {
   const [gameId, setGameId] = useState('');
