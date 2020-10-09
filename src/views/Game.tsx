@@ -6,10 +6,9 @@ import { RouteComponentProps  } from 'react-router';
 import CharacterCard from '../components/CharacterCard';
 import { db } from '../services/Database';
 
-interface MatchParams {
+interface Props extends RouteComponentProps<{
   id: string;
-}
-interface Props extends RouteComponentProps<MatchParams> {}
+}> {}
 
 const Game: React.FunctionComponent<Props> = ({
   match: {
