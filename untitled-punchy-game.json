@@ -325,6 +325,395 @@
     {
       "name": "Enemy Cards",
       "components": [
+        {
+          "name": "Slick Rick",
+          "description": "",
+          "quantity": "-1",
+          "properties": [
+            {
+              "name": "Health",
+              "value": "5"
+            },
+            {
+              "name": "Attack",
+              "value": "1"
+            },
+            {
+              "name": "Reward",
+              "value": "1"
+            },
+            {
+              "name": "Armor",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "name": "Big Tony",
+          "description": "",
+          "quantity": "-1",
+          "properties": [
+            {
+              "name": "Health",
+              "value": "5"
+            },
+            {
+              "name": "Attack",
+              "value": "1"
+            },
+            {
+              "name": "Reward",
+              "value": "1"
+            },
+            {
+              "name": "Armor",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "name": "Little Tony",
+          "description": "",
+          "quantity": "-1",
+          "properties": [
+            {
+              "name": "Health",
+              "value": "3"
+            },
+            {
+              "name": "Attack",
+              "value": "4"
+            },
+            {
+              "name": "Reward",
+              "value": "2"
+            },
+            {
+              "name": "Armor",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "name": "Medium Sized Tony",
+          "description": "",
+          "quantity": "-1",
+          "properties": [
+            {
+              "name": "Health",
+              "value": "4"
+            },
+            {
+              "name": "Attack",
+              "value": "2"
+            },
+            {
+              "name": "Reward",
+              "value": "2"
+            },
+            {
+              "name": "Armor",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "name": "Street Punk",
+          "description": "",
+          "quantity": "-1",
+          "properties": [
+            {
+              "name": "Health",
+              "value": "3"
+            },
+            {
+              "name": "Attack",
+              "value": "2"
+            },
+            {
+              "name": "Reward",
+              "value": "1"
+            },
+            {
+              "name": "Armor",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "name": "Lil Man",
+          "description": "",
+          "quantity": "-1",
+          "properties": [
+            {
+              "name": "Health",
+              "value": "2"
+            },
+            {
+              "name": "Attack",
+              "value": "2"
+            },
+            {
+              "name": "Reward",
+              "value": "1"
+            },
+            {
+              "name": "Armor",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "name": "Ricky da Rat",
+          "description": "",
+          "quantity": "-1",
+          "properties": [
+            {
+              "name": "Health",
+              "value": "3"
+            },
+            {
+              "name": "Attack",
+              "value": "3"
+            },
+            {
+              "name": "Reward",
+              "value": "3"
+            },
+            {
+              "name": "Armor",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "name": "Vermin Vinnie",
+          "description": "",
+          "quantity": "-1",
+          "properties": [
+            {
+              "name": "Health",
+              "value": "4"
+            },
+            {
+              "name": "Attack",
+              "value": "4"
+            },
+            {
+              "name": "Reward",
+              "value": "4"
+            },
+            {
+              "name": "Armor",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "name": "Nasty Nate",
+          "description": "",
+          "quantity": "-1",
+          "properties": [
+            {
+              "name": "Health",
+              "value": "4"
+            },
+            {
+              "name": "Attack",
+              "value": "5"
+            },
+            {
+              "name": "Reward",
+              "value": "5"
+            },
+            {
+              "name": "Armor",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "name": "Combover Cliff",
+          "description": "",
+          "quantity": "-1",
+          "properties": [
+            {
+              "name": "Health",
+              "value": "3"
+            },
+            {
+              "name": "Attack",
+              "value": "3"
+            },
+            {
+              "name": "Reward",
+              "value": "3"
+            },
+            {
+              "name": "Armor",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "name": "Bobby Gold Tooth",
+          "description": "",
+          "quantity": "-1",
+          "properties": [
+            {
+              "name": "Health",
+              "value": "3"
+            },
+            {
+              "name": "Attack",
+              "value": "2"
+            },
+            {
+              "name": "Reward",
+              "value": "3"
+            },
+            {
+              "name": "Armor",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "name": "Dave",
+          "description": "",
+          "quantity": "-1",
+          "properties": [
+            {
+              "name": "Health",
+              "value": "10"
+            },
+            {
+              "name": "Attack",
+              "value": "9"
+            },
+            {
+              "name": "Reward",
+              "value": "100"
+            },
+            {
+              "name": "Armor",
+              "value": "5"
+            }
+          ]
+        },
+        {
+          "name": "Gabagool",
+          "description": "",
+          "quantity": "-1",
+          "properties": [
+            {
+              "name": "Health",
+              "value": "4"
+            },
+            {
+              "name": "Attack",
+              "value": "5"
+            },
+            {
+              "name": "Reward",
+              "value": "5"
+            },
+            {
+              "name": "Armor",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "name": "Chuck",
+          "description": "",
+          "quantity": "-1",
+          "properties": [
+            {
+              "name": "Health",
+              "value": "2"
+            },
+            {
+              "name": "Attack",
+              "value": "2"
+            },
+            {
+              "name": "Reward",
+              "value": "2"
+            },
+            {
+              "name": "Armor",
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "name": "Mr. Cool",
+          "properties": [
+            {
+              "name": "Health",
+              "value": "7"
+            },
+            {
+              "name": "Attack",
+              "value": "3"
+            },
+            {
+              "name": "Reward",
+              "value": "5"
+            },
+            {
+              "name": "Armor",
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "name": "Zachary Krug",
+          "description": "",
+          "quantity": "-1",
+          "properties": [
+            {
+              "name": "Health",
+              "value": "3"
+            },
+            {
+              "name": "Attack",
+              "value": "1"
+            },
+            {
+              "name": "Reward",
+              "value": "1"
+            },
+            {
+              "name": "Armor",
+              "value": "0"
+            }
+          ]
+        },
+        {
+          "name": "Gus Remington",
+          "description": "",
+          "quantity": "-1",
+          "properties": [
+            {
+              "name": "Health",
+              "value": "4"
+            },
+            {
+              "name": "Attack",
+              "value": "2"
+            },
+            {
+              "name": "Reward",
+              "value": "2"
+            },
+            {
+              "name": "Armor",
+              "value": "1"
+            }
+          ]
+        }
       ]
     },
     {
