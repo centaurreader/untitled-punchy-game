@@ -23,7 +23,7 @@ interface Component {
 
 interface Die extends Component {
   sides: number;
-  faces: Array<string|number|null>;
+  faces: Array<string|null>;
 }
 
 interface Property {
