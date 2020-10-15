@@ -6,17 +6,27 @@ import { RouteComponentProps  } from 'react-router';
 import CharacterCard from '../components/CharacterCard';
 import { db } from '../services/Database';
 
-interface Props extends RouteComponentProps<{
-  id: string;
-}> {}
+interface Props extends RouteComponentProps<
+  {
+    id: string;
+  },
+  any,
+  {
+    playerId: string;
+  }
+> {}
 
 const Game: React.FunctionComponent<Props> = ({
+  location: {
+    state,
+  },
   match: {
     params: {
       id,
     },
   },
 }) => {
+  const [playerId, setPlayerId] = useState<string>(state.playerId);
   const [game, setGame] = useState<Game | undefined>(undefined);
 
   useEffect(() => {
@@ -83,7 +93,8 @@ const Game: React.FunctionComponent<Props> = ({
             <ul>
               {game.players.map((player: Player) => (
                 <li key={player.id}>
-                  {player.name}{game.currentPlayer === player.id ? (' [Turn]') : null}
+                  {game.currentPlayer === playerId ? `You (${player.name})` : player.name}
+                  {game.currentPlayer === player.id ? (' [Turn]') : null}
                 </li>
               ))}
             </ul>

@@ -12,6 +12,15 @@ const Home: React.FunctionComponent<RouteComponentProps<any>> = ({
   const [gameId, setGameId] = useState('');
   const [name, setName] = useState('');
 
+  const redirectToGameInstance = (instanceId: string, playerId: string) => {
+    history.push({
+      pathname: `/games/${instanceId}`,
+      state: {
+        playerId,
+      }
+    });
+  };
+
   const joinGame = (event: FormEvent) => {
     event.preventDefault();
 
@@ -21,15 +30,17 @@ const Home: React.FunctionComponent<RouteComponentProps<any>> = ({
     const docRef = db.collection('games').doc(gameId);
     docRef.get().then((doc) => {
       const data = doc.data() ?? {};
+      const playerId = nanoid();
       const game: Game = {
         currentPlayer: data.currentPlayer,
         currentTurn: data.currentTurn,
         players: [
           ...data.players,
-          { name, id: nanoid(), },
+          { name, id: playerId, },
         ],
       };
       docRef.update(game).then(() => {
+        redirectToGameInstance(doc.id, playerId);
         history.push(`/games/${doc.id}`);
       });
     })
@@ -52,7 +63,7 @@ const Home: React.FunctionComponent<RouteComponentProps<any>> = ({
     };
     db.collection('games').add(game)
     .then((docRef) => {
-      history.push(`/games/${docRef.id}`);
+      redirectToGameInstance(docRef.id, player.id);
     });
   };
 

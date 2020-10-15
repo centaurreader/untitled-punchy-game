@@ -1,0 +1,114 @@
+{
+  "name": "Untitled Punchy Game",
+  "components": [
+    {
+      "name": "Hero Cards",
+      "components": []
+    },
+    {
+      "name": "Move Cards",
+      "components": [
+        {
+          "name": "Punch",
+          "quantity": -1,
+          "properties": [
+            { "name": "Type", "value": "Punch" },
+            { "name": "Kick Dice", "value": 0 },
+            { "name": "Punch Dice", "value": 2 },
+            { "name": "Grapple Dice", "value": 0 },
+            { "name": "Damage", "value": 1 },
+            { "name": "Ability", "value": null }
+          ]
+        },
+        {
+          "name": "Kick",
+          "quantity": -1,
+          "properties": [
+            { "name": "Type", "value": "Kick" },
+            { "name": "Kick Dice", "value": 2 },
+            { "name": "Punch Dice", "value": 0 },
+            { "name": "Grapple Dice", "value": 0 },
+            { "name": "Damage", "value": 1 },
+            { "name": "Ability", "value": null }
+          ]
+        },
+        {
+          "name": "Mutator Slam",
+          "quantity": 1,
+          "properties": [
+            { "name": "Type", "value": "Punch/Grapple" },
+            { "name": "Kick Dice", "value": 2 },
+            { "name": "Punch Dice", "value": 0 },
+            { "name": "Grapple Dice", "value": 0 },
+            { "name": "Damage", "value": 1 },
+            { "name": "Ability", "value": null }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Enemy Cards",
+      "components": [
+      ]
+    },
+    {
+      "name": "Combo Cards",
+      "components": [
+      ]
+    },
+    {
+      "name": "Damage Dice",
+      "sides": 6,
+      "faces": [
+        "1",
+        "1",
+        "0",
+        "0",
+        "0",
+        "2",
+      ]
+    },
+    {
+      "name": "Punch Dice",
+      "sides": 8,
+      "faces": [
+        "hit",
+        "hit",
+        "hit",
+        "miss",
+        "miss",
+        "miss",
+        "miss",
+        "crit"
+      ]
+    },
+    {
+      "name": "Kick Dice",
+      "sides": 8,
+      "faces": [
+        "hit",
+        "hit",
+        "hit",
+        "miss",
+        "miss",
+        "miss",
+        "miss",
+        "crit"
+      ]
+    },
+    {
+      "name": "Grapple Dice",
+      "sides": 8,
+      "faces": [
+        "hit",
+        "hit",
+        "hit",
+        "miss",
+        "miss",
+        "miss",
+        "miss",
+        "crit"
+      ]
+    }
+  ]
+}
