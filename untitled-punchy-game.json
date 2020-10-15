@@ -10,6 +10,7 @@
       "components": [
         {
           "name": "Punch",
+          "description": "",
           "quantity": -1,
           "properties": [
             { "name": "Type", "value": "Punch" },
@@ -22,6 +23,7 @@
         },
         {
           "name": "Kick",
+          "description": "",
           "quantity": -1,
           "properties": [
             { "name": "Type", "value": "Kick" },
@@ -34,6 +36,7 @@
         },
         {
           "name": "Mutator Slam",
+          "description": "",
           "quantity": 1,
           "properties": [
             { "name": "Type", "value": "Punch/Grapple" },
