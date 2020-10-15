@@ -18,13 +18,12 @@ interface ComponentGroup {
 
 interface Component {
   name: string;
-  count: number;
+  quantity: number;
 }
 
 interface Die extends Component {
   sides: number;
   faces: Array<string|number|null>;
-  quantity: number;
 }
 
 interface Property {
@@ -34,6 +33,5 @@ interface Property {
 
 interface Card extends Component {
   description: string;
-  quantity: number;
   properties: Array<Property>
 }
