@@ -5,6 +5,26 @@ Games are comprised of two types of data:
 1. Component Groups
 2. Component
 
+**Basic Game Definition**
+```
+{
+  "name": "Poker",
+  "type": "Cards",
+  "components": [
+    {
+      "name": "Ace of Spades",
+      "description": null,
+      "quantity": "1",
+      "properties": [
+        { "name": "suit", "value": "Spades" },
+        { "name": "value", "value": "A" },
+      ]
+    },
+    ...
+  ]
+}
+```
+
 ### Component Groups
 A collection of components of a given type.
 
