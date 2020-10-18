@@ -11,19 +11,16 @@ interface Game {
 }
 
 // Game Defintion
+enum ComponentTypes {
+  Box = "Box",
+  Card = "Cards",
+  Die = "Dice"
+}
+
 interface ComponentGroup {
   name: string;
   components: Array<Component|ComponentGroup>;
-}
-
-interface Component {
-  name: string;
-  quantity: number;
-}
-
-interface Die extends Component {
-  sides: number;
-  faces: Array<string|null>;
+  type: ComponentTypes;
 }
 
 interface Property {
@@ -31,7 +28,9 @@ interface Property {
   value: string|number;
 }
 
-interface Card extends Component {
-  description: string;
-  properties: Array<Property>
+interface Component {
+  name: string;
+  description?: string|null;
+  quantity: number;
+  properties: Array<Property>;
 }

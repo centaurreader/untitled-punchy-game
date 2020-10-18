@@ -7,7 +7,7 @@ yargs
       describe: 'Build CSVs into Sandbox Resourecs',
     });
   }, (argv) => {
-    Resource.buildResourceFile(argv.files);
+    Resource.buildFile(argv.files);
   })
   .strictCommands()
   .demandCommand(1)

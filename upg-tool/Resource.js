@@ -12,12 +12,29 @@ function parseCsv(csv) {
   );
 }
 
+function parsePropertyValue(value) {
+  return value
+    ? value.split('').includes('|')
+      ? value.split('|')
+      : value
+    : null;
+}
+
 function csvToObjects(parsedCsv) {
   const schema = parsedCsv[0];
   const records = parsedCsv.slice(1, parsedCsv.length - 1);
   return records.map((record) => schema.reduce((result, property, i) => ({
     ...result,
-    [property]: record[i],
+    ...(property.startsWith('property-')
+      ? { properties: [
+            ...(result.properties || []),
+            {
+              name: property.replace('property-', ''),
+              value: parsePropertyValue(record[i]),
+            }, 
+          ],
+        }
+      : { [property]: parsePropertyValue(record[i]), }),
   }), {}));
 }
 
@@ -34,12 +51,20 @@ function buildFile(filePathArray) {
     const file = fs.readFileSync(path.resolve(filePath)).toString();
     const parsedCsv = parseCsv(file);
     const objects = csvToObjects(parsedCsv);
-    return {
+    return [
       ...result,
-      [filename]: objects,
-    };
-  }, {});
-  writeJsonOutput(result);
+      {
+        type: null,
+        name: filename,
+        components: objects,
+      },
+    ];
+  }, []);
+  writeJsonOutput({
+    type: 'Box',
+    name: null,
+    components: result,
+  });
 }
 
 module.exports = {

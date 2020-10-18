@@ -1,0 +1,2159 @@
+{
+    "type": "Box",
+    "name": "Untitled Punchy Game",
+    "components": [
+        {
+            "type": "Cards",
+            "name": "Enemies Deck",
+            "components": [
+                {
+                    "name": "Johnny",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "1"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "Ricky",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "1"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "Vickie",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "1"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "Susan",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "1"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "Marty",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "1"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "Steve",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "1"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "Chuck",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "1"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "Big",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "1"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "Doofus",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "1"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "Creamy",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "1"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "Mr.",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "1"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "Dr.",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "1"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "Bogus",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "2"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "Nasty",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "2"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "Nerdy",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "2"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "Ugly",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "2"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "2-Butts",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "2"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "Corn on the Cob",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "3"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "3"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "Big Shoes",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "3"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "3"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "No Hands",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "3"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "3"
+                        }
+                    ],
+                    "quantity": "1"
+                }
+            ]
+        },
+        {
+            "type": "Cards",
+            "name": "Enemy Modifier Deck",
+            "components": [
+                {
+                    "name": "Jammer",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "1"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "Slick",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "1"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "Two-Hands",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "1"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "Poppins",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "1"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "Slammer",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "1"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "Crispy",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "1"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "9-Fingers",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "1"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "Ape",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "1"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "Death",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "1"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "Doom",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "1"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "Metalhead",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "1"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "Macaroni",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "1"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "da Turtle",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "2"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "Stevens",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "2"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "Roberts",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "2"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "Oiler",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "2"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "da Rat",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "2"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "da Snake",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "3"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "3"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "da Bear",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "3"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "3"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "da Wolf",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "3"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "3"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "DeVile",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "4"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "4"
+                        }
+                    ],
+                    "quantity": "1"
+                }
+            ]
+        },
+        {
+            "type": "Cards",
+            "name": "Move Finisher Deck",
+            "components": [
+                {
+                    "name": "destruction",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "demolisher",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "1"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null
+                        },
+                        {
+                            "name": "damage",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "annihilation",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "life-ender",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "1"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null
+                        },
+                        {
+                            "name": "damage",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "bone breaker",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "1"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null
+                        },
+                        {
+                            "name": "damage",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "kill factory",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "1"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null
+                        },
+                        {
+                            "name": "damage",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "skull smasher",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null
+                        },
+                        {
+                            "name": "punch",
+                            "value": "1"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "cracker",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "1"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null
+                        },
+                        {
+                            "name": "damage",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "splitter",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null
+                        },
+                        {
+                            "name": "punch",
+                            "value": "1"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "breaker",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "blaster",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null
+                        },
+                        {
+                            "name": "punch",
+                            "value": "1"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "bomb",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "neck breaker",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null
+                        },
+                        {
+                            "name": "punch",
+                            "value": "1"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "explosion",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "crasher",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "2"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "1"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null
+                        },
+                        {
+                            "name": "damage",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "beat down",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "2"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "finale",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "2"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null
+                        },
+                        {
+                            "name": "damage",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "attempt",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null
+                        },
+                        {
+                            "name": "punch",
+                            "value": "2"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "dive",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "2"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "shake down",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null
+                        },
+                        {
+                            "name": "punch",
+                            "value": "3"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "3"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "kick",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "3"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "1"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null
+                        },
+                        {
+                            "name": "damage",
+                            "value": "3"
+                        }
+                    ],
+                    "quantity": "1"
+                }
+            ]
+        },
+        {
+            "type": "Cards",
+            "name": "Move Modifier Deck",
+            "components": [
+                {
+                    "name": "kicking",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "punching",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "smashing",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "slamming",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "backward",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "forward",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "off-balance",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "bizzare",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "half",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "depressing",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "flying",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "iron",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "flaming",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "upside down",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "inverse",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "backward",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "power",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "big",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "disgusting",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "full",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "freezing",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "diving",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "neon",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "stone",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "3"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "soaring",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "3"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "reverse",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "3"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "fancy",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "3"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "evolved",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "3"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "rushing",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "3"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "seething",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "3"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "spirit",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "3"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "steel",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "4"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "overhead",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "4"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "psychotic",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "4"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "furious",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "4"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "destructo",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "4"
+                        }
+                    ],
+                    "quantity": "1"
+                }
+            ]
+        },
+        {
+            "type": "Cards",
+            "name": "Move Deck",
+            "components": [
+                {
+                    "name": "punch",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null
+                        },
+                        {
+                            "name": "punch",
+                            "value": "1"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "slap",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null
+                        },
+                        {
+                            "name": "punch",
+                            "value": "1"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "poke",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null
+                        },
+                        {
+                            "name": "punch",
+                            "value": "1"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "flick",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null
+                        },
+                        {
+                            "name": "punch",
+                            "value": "1"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "smash",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null
+                        },
+                        {
+                            "name": "punch",
+                            "value": "2"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "jab",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null
+                        },
+                        {
+                            "name": "punch",
+                            "value": "2"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "roundhouse",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null
+                        },
+                        {
+                            "name": "punch",
+                            "value": "2"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "chop",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null
+                        },
+                        {
+                            "name": "punch",
+                            "value": "3"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "hook",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null
+                        },
+                        {
+                            "name": "punch",
+                            "value": "3"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "uppercut",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null
+                        },
+                        {
+                            "name": "punch",
+                            "value": "4"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "grab",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null
+                        },
+                        {
+                            "name": "punch",
+                            "value": null
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "slam",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null
+                        },
+                        {
+                            "name": "punch",
+                            "value": null
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "choke",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null
+                        },
+                        {
+                            "name": "punch",
+                            "value": null
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "throw",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null
+                        },
+                        {
+                            "name": "punch",
+                            "value": null
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "nelson",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null
+                        },
+                        {
+                            "name": "punch",
+                            "value": null
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "suplex",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null
+                        },
+                        {
+                            "name": "punch",
+                            "value": null
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "grip",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null
+                        },
+                        {
+                            "name": "punch",
+                            "value": null
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "toss",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null
+                        },
+                        {
+                            "name": "punch",
+                            "value": null
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "3"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "bounce",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null
+                        },
+                        {
+                            "name": "punch",
+                            "value": null
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "3"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "chinlock",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null
+                        },
+                        {
+                            "name": "punch",
+                            "value": null
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "4"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "side",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "roundhouse",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "side",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "back",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "butterfly",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "2"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "crescent",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "2"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "hook",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "2"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "spinning heel",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "3"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "name": "calf",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "3"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null
+                        }
+                    ],
+                    "quantity": "1"
+                }
+            ]
+        },
+        {
+            "type": "Dice",
+            "name": "Dice Bag",
+            "components": [
+                {
+                    "name": "punch",
+                    "description": null,
+                    "quantity": "-1",
+                    "properties": [
+                        {
+                            "name": "sides",
+                            "value": "8"
+                        },
+                        {
+                            "name": "faces",
+                            "value": [
+                                "hit",
+                                "hit",
+                                "hit",
+                                "miss",
+                                "miss",
+                                "miss",
+                                "miss",
+                                "crit"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "kick",
+                    "description": null,
+                    "quantity": "-1",
+                    "properties": [
+                        {
+                            "name": "sides",
+                            "value": "8"
+                        },
+                        {
+                            "name": "faces",
+                            "value": [
+                                "hit",
+                                "hit",
+                                "hit",
+                                "miss",
+                                "miss",
+                                "miss",
+                                "miss",
+                                "crit"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "grapple",
+                    "description": null,
+                    "quantity": "-1",
+                    "properties": [
+                        {
+                            "name": "sides",
+                            "value": "8"
+                        },
+                        {
+                            "name": "faces",
+                            "value": [
+                                "hit",
+                                "hit",
+                                "hit",
+                                "miss",
+                                "miss",
+                                "miss",
+                                "miss",
+                                "crit"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
