@@ -5,12 +5,15 @@ import React, {
 import { RouteComponentProps  } from 'react-router';
 import { nanoid } from 'nanoid';
 import { db } from '../services/Database';
+import InputResourceFile from '../components/InputResourceFile';
 
 const Home: React.FunctionComponent<RouteComponentProps<any>> = ({
   history,
 }) => {
+  const [box, setBox] = useState<null|Box>();
   const [gameId, setGameId] = useState('');
-  const [name, setName] = useState('');
+  const [joinName, setJoinName] = useState('');
+  const [createName, setCreateName] = useState('');
 
   const redirectToGameInstance = (instanceId: string, playerId: string) => {
     history.push({
@@ -24,8 +27,9 @@ const Home: React.FunctionComponent<RouteComponentProps<any>> = ({
   const joinGame = (event: FormEvent) => {
     event.preventDefault();
 
-    if (!name || !gameId) {
+    if (!joinName || !gameId) {
       alert('need a name and a game id');
+      return;
     }
     const docRef = db.collection('games').doc(gameId);
     docRef.get().then((doc) => {
@@ -36,8 +40,9 @@ const Home: React.FunctionComponent<RouteComponentProps<any>> = ({
         currentTurn: data.currentTurn,
         players: [
           ...data.players,
-          { name, id: playerId, },
+          { name: joinName, id: playerId, },
         ],
+        box: data.box,
       };
       docRef.update(game).then(() => {
         redirectToGameInstance(doc.id, playerId);
@@ -46,20 +51,25 @@ const Home: React.FunctionComponent<RouteComponentProps<any>> = ({
     })
   };
 
-  const createGame = (event: React.MouseEvent) => {
+  const createGame = (event: FormEvent) => {
     event.preventDefault();
 
-    if (!name) {
+    if (!createName) {
       alert('need a name');
+      return;
+    }
+    if (!box) {
+      alert('need a resource file');
     }
     const player = {
-      name,
+      name: createName,
       id: nanoid(),
     };
     const game: Game = {
       currentPlayer: player.id,
       currentTurn: 0,
       players: [player],
+      box: box || { name: '', componentGroups: [], },
     };
     db.collection('games').add(game)
     .then((docRef) => {
@@ -69,18 +79,28 @@ const Home: React.FunctionComponent<RouteComponentProps<any>> = ({
 
   return (
     <>
-      <h1>Start or Join Game</h1>
+      <h1>UPG Sandbox</h1>
       <form onSubmit={joinGame}>
+        <h2>Join Game</h2>
         <label>
-          Name
-          <input onChange={(event) => setName(event.target.value)} value={name} />
+          Your Name
+          <input onChange={(event) => setJoinName(event.target.value)} value={joinName} />
         </label>
         <label>
           Game ID
           <input onChange={(event) => setGameId(event.target.value)} value={gameId} />
         </label>
         <button type="submit">Join Game</button>
-        <button type="button" onClick={createGame}>Create Game</button>
+      </form>
+
+      <form onSubmit={createGame}>
+        <h2>Create Game</h2>
+        <label>
+          Your Name
+          <input onChange={(event) => setCreateName(event.target.value)} value={createName} />
+        </label>
+        <InputResourceFile onLoad={(box: Box) => { setBox(box); }} />
+        <button type="submit" onClick={createGame}>Create Game</button>
       </form>
     </>
   );

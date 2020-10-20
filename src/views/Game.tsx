@@ -3,8 +3,12 @@ import React, {
   useState,
 } from 'react';
 import { RouteComponentProps  } from 'react-router';
-import CharacterCard from '../components/CharacterCard';
 import { db } from '../services/Database';
+
+// temp
+import GameBox from '../components/GameBox';
+import ComponentMenu from '../components/ComponentMenu';
+import PlayersMenu from '../components/PlayersMenu';
 
 interface Props extends RouteComponentProps<
   {
@@ -36,6 +40,7 @@ const Game: React.FunctionComponent<Props> = ({
         currentPlayer: data.currentPlayer,
         currentTurn: data.currentTurn,
         players: data.players,
+        box: data.box,
       };
     }
 
@@ -64,6 +69,7 @@ const Game: React.FunctionComponent<Props> = ({
         currentPlayer: nextPlayer.id,
         currentTurn: isRoundOver ? (data.currentTurn + 1) : data.currentTurn,
         players,
+        box: data.box,
       };
       docRef.update(updatedGame);
     });
@@ -78,28 +84,14 @@ const Game: React.FunctionComponent<Props> = ({
       <h1>Game ID {id}</h1>
       <div className="game_zone">
         <div className="game_zone--main">
-          <section>
-            <h2>Play Area</h2>
-            <CharacterCard
-              name="Mutant Man"
-              health="21"
-              moves={[]}
-            />
-          </section>
+          <GameBox component={game.box} />
+          <div style={{ height: '50vh', }}>
+            Play Area
+          </div>
         </div>
         <div className="game_zone--sidebar">
-          <section>
-            <h2>Players</h2>
-            <ul>
-              {game.players.map((player: Player) => (
-                <li key={player.id}>
-                  {game.currentPlayer === playerId ? `You (${player.name})` : player.name}
-                  {game.currentPlayer === player.id ? (' [Turn]') : null}
-                </li>
-              ))}
-            </ul>
-            <button type="button" onClick={endTurn}>End Turn</button>
-          </section>
+          <ComponentMenu game={game.box} />
+          <PlayersMenu game={game} playerId={playerId} endTurn={endTurn} />
         </div>
       </div>
     </>

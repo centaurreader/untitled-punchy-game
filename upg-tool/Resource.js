@@ -63,7 +63,7 @@ function buildFile(filePathArray) {
   writeJsonOutput({
     type: 'Box',
     name: null,
-    components: result,
+    componentGroups: result,
   });
 }
 

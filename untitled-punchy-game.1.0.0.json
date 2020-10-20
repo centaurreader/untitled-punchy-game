@@ -1,7 +1,7 @@
 {
     "type": "Box",
     "name": "Untitled Punchy Game",
-    "components": [
+    "componentGroups": [
         {
             "type": "Cards",
             "name": "Enemies Deck",

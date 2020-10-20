@@ -9,18 +9,23 @@ Games are comprised of two types of data:
 ```
 {
   "name": "Poker",
-  "type": "Cards",
-  "components": [
+  "componentGroups": [
     {
-      "name": "Ace of Spades",
-      "description": null,
-      "quantity": "1",
-      "properties": [
-        { "name": "suit", "value": "Spades" },
-        { "name": "value", "value": "A" },
+      "type": "Cards",
+      "name": "Deck",
+      "components": [
+        {
+          "name": "Ace of Spades",
+          "description": null,
+          "quantity": "1",
+          "properties": [
+            { "name": "suit", "value": "Spades" },
+            { "name": "value", "value": "A" },
+          ]
+        },
+        ...
       ]
-    },
-    ...
+    }
   ]
 }
 ```
@@ -67,8 +72,7 @@ _Note 2: pipe-separating the value for a field results in an array value_
 ```
 {
   "name": "null",
-  "type": "Box",
-  "components": [
+  "componentGroups": [
     {
       "name": "characters.csv",
       "type": null,
