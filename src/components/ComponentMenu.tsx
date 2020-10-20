@@ -11,7 +11,7 @@ const ComponentMenu: React.FC<{
         {game.componentGroups.map((componentGroup: ComponentGroup) => (
           <ComponentMenuListItem
             componentGroup={componentGroup}
-            key={componentGroup.name}
+            key={componentGroup.id}
           />
         ))}
       </ul>

@@ -17,7 +17,7 @@ const ComponentMenuListItem: React.FC<any> = ({ componentGroup, }) => {
       </button>
       <ul>
         {isOpen ? componentGroup.components.map((component: Component) => (
-          <li key={component.name}>
+          <li key={component.id}>
             <button type="button">{component.name}</button>
           </li>
         )) : null}
