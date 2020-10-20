@@ -19,7 +19,7 @@ const Game: React.FC<Props> = ({
       <ul>
         {game.players.map((player: Player) => (
           <li key={player.id}>
-            {game.currentPlayer === playerId ? `You (${player.name})` : player.name}
+            {game.currentPlayer === playerId ? `${player.name} (You)` : player.name}
             {game.currentPlayer === player.id ? (' [Turn]') : null}
           </li>
         ))}
