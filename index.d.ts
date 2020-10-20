@@ -24,6 +24,7 @@ enum ComponentTypes {
 
 interface ComponentGroup {
   name: string;
+  id: string;
   components: Array<Component>;
   type: ComponentTypes;
 }
@@ -31,6 +32,7 @@ interface ComponentGroup {
 interface Property {
   name: string;
   value: string|number;
+  id: string;
 }
 
 interface Component {
@@ -38,4 +40,5 @@ interface Component {
   description?: string|null;
   quantity: number;
   properties: Array<Property>;
+  id: string;
 }
