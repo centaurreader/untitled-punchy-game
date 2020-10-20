@@ -1,0 +1,23 @@
+name,description,property-kick,property-punch,property-grapple,property-damage,quantity
+destruction,,1,,1,1,1
+demolisher,,1,1,,1,1
+annihilation,,1,,1,1,1
+life-ender,,1,1,,1,1
+bone breaker,,1,1,,1,1
+kill factory,,1,1,,1,1
+skull smasher,,,1,1,1,1
+cracker,,1,1,,1,1
+splitter,,,1,1,1,1
+breaker,,1,,1,1,1
+blaster,,,1,1,1,1
+bomb,,1,,1,1,1
+neck breaker,,,1,1,1,1
+explosion,,1,,1,1,1
+crasher,,2,1,,2,1
+beat down,,2,,1,2,1
+finale,,1,2,,2,1
+attempt,,,2,1,2,1
+dive,,1,,2,2,1
+shake down,,,3,1,3,1
+kick,,3,1,,3,1
+jutsu,,1,,4,4,1

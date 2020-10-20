@@ -1,0 +1,5 @@
+name,description,quantity,property-sides,property-faces
+punch,,-1,8,hit|hit|hit|miss|miss|miss|miss|crit
+kick,,-1,8,hit|hit|hit|miss|miss|miss|miss|crit
+grapple,,-1,8,hit|hit|hit|miss|miss|miss|miss|crit
+damage,,-1,6,1|1|0|0|0|2

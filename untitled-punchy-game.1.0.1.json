@@ -3,2092 +3,19 @@
     "name": "Untitled Punchy Game",
     "componentGroups": [
         {
-            "type": "Cards",
-            "name": "Enemies Deck",
-            "components": [
-                {
-                    "name": "Johnny",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "health",
-                            "value": "1"
-                        },
-                        {
-                            "name": "attack",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "Ricky",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "health",
-                            "value": "1"
-                        },
-                        {
-                            "name": "attack",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "Vickie",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "health",
-                            "value": "1"
-                        },
-                        {
-                            "name": "attack",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "Susan",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "health",
-                            "value": "1"
-                        },
-                        {
-                            "name": "attack",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "Marty",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "health",
-                            "value": "1"
-                        },
-                        {
-                            "name": "attack",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "Steve",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "health",
-                            "value": "1"
-                        },
-                        {
-                            "name": "attack",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "Chuck",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "health",
-                            "value": "1"
-                        },
-                        {
-                            "name": "attack",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "Big",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "health",
-                            "value": "1"
-                        },
-                        {
-                            "name": "attack",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "Doofus",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "health",
-                            "value": "1"
-                        },
-                        {
-                            "name": "attack",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "Creamy",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "health",
-                            "value": "1"
-                        },
-                        {
-                            "name": "attack",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "Mr.",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "health",
-                            "value": "1"
-                        },
-                        {
-                            "name": "attack",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "Dr.",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "health",
-                            "value": "1"
-                        },
-                        {
-                            "name": "attack",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "Bogus",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "health",
-                            "value": "2"
-                        },
-                        {
-                            "name": "attack",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "Nasty",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "health",
-                            "value": "2"
-                        },
-                        {
-                            "name": "attack",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "Nerdy",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "health",
-                            "value": "2"
-                        },
-                        {
-                            "name": "attack",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "Ugly",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "health",
-                            "value": "2"
-                        },
-                        {
-                            "name": "attack",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "2-Butts",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "health",
-                            "value": "2"
-                        },
-                        {
-                            "name": "attack",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "Corn on the Cob",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "health",
-                            "value": "3"
-                        },
-                        {
-                            "name": "attack",
-                            "value": "3"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "Big Shoes",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "health",
-                            "value": "3"
-                        },
-                        {
-                            "name": "attack",
-                            "value": "3"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "No Hands",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "health",
-                            "value": "3"
-                        },
-                        {
-                            "name": "attack",
-                            "value": "3"
-                        }
-                    ],
-                    "quantity": "1"
-                }
-            ]
-        },
-        {
-            "type": "Cards",
-            "name": "Enemy Modifier Deck",
-            "components": [
-                {
-                    "name": "Jammer",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "reward",
-                            "value": "1"
-                        },
-                        {
-                            "name": "armor",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "Slick",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "reward",
-                            "value": "1"
-                        },
-                        {
-                            "name": "armor",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "Two-Hands",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "reward",
-                            "value": "1"
-                        },
-                        {
-                            "name": "armor",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "Poppins",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "reward",
-                            "value": "1"
-                        },
-                        {
-                            "name": "armor",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "Slammer",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "reward",
-                            "value": "1"
-                        },
-                        {
-                            "name": "armor",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "Crispy",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "reward",
-                            "value": "1"
-                        },
-                        {
-                            "name": "armor",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "9-Fingers",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "reward",
-                            "value": "1"
-                        },
-                        {
-                            "name": "armor",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "Ape",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "reward",
-                            "value": "1"
-                        },
-                        {
-                            "name": "armor",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "Death",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "reward",
-                            "value": "1"
-                        },
-                        {
-                            "name": "armor",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "Doom",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "reward",
-                            "value": "1"
-                        },
-                        {
-                            "name": "armor",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "Metalhead",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "reward",
-                            "value": "1"
-                        },
-                        {
-                            "name": "armor",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "Macaroni",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "reward",
-                            "value": "1"
-                        },
-                        {
-                            "name": "armor",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "da Turtle",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "reward",
-                            "value": "2"
-                        },
-                        {
-                            "name": "armor",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "Stevens",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "reward",
-                            "value": "2"
-                        },
-                        {
-                            "name": "armor",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "Roberts",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "reward",
-                            "value": "2"
-                        },
-                        {
-                            "name": "armor",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "Oiler",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "reward",
-                            "value": "2"
-                        },
-                        {
-                            "name": "armor",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "da Rat",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "reward",
-                            "value": "2"
-                        },
-                        {
-                            "name": "armor",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "da Snake",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "reward",
-                            "value": "3"
-                        },
-                        {
-                            "name": "armor",
-                            "value": "3"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "da Bear",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "reward",
-                            "value": "3"
-                        },
-                        {
-                            "name": "armor",
-                            "value": "3"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "da Wolf",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "reward",
-                            "value": "3"
-                        },
-                        {
-                            "name": "armor",
-                            "value": "3"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "DeVile",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "reward",
-                            "value": "4"
-                        },
-                        {
-                            "name": "armor",
-                            "value": "4"
-                        }
-                    ],
-                    "quantity": "1"
-                }
-            ]
-        },
-        {
-            "type": "Cards",
-            "name": "Move Finisher Deck",
-            "components": [
-                {
-                    "name": "destruction",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": "1"
-                        },
-                        {
-                            "name": "punch",
-                            "value": null
-                        },
-                        {
-                            "name": "grapple",
-                            "value": "1"
-                        },
-                        {
-                            "name": "damage",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "demolisher",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": "1"
-                        },
-                        {
-                            "name": "punch",
-                            "value": "1"
-                        },
-                        {
-                            "name": "grapple",
-                            "value": null
-                        },
-                        {
-                            "name": "damage",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "annihilation",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": "1"
-                        },
-                        {
-                            "name": "punch",
-                            "value": null
-                        },
-                        {
-                            "name": "grapple",
-                            "value": "1"
-                        },
-                        {
-                            "name": "damage",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "life-ender",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": "1"
-                        },
-                        {
-                            "name": "punch",
-                            "value": "1"
-                        },
-                        {
-                            "name": "grapple",
-                            "value": null
-                        },
-                        {
-                            "name": "damage",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "bone breaker",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": "1"
-                        },
-                        {
-                            "name": "punch",
-                            "value": "1"
-                        },
-                        {
-                            "name": "grapple",
-                            "value": null
-                        },
-                        {
-                            "name": "damage",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "kill factory",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": "1"
-                        },
-                        {
-                            "name": "punch",
-                            "value": "1"
-                        },
-                        {
-                            "name": "grapple",
-                            "value": null
-                        },
-                        {
-                            "name": "damage",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "skull smasher",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": null
-                        },
-                        {
-                            "name": "punch",
-                            "value": "1"
-                        },
-                        {
-                            "name": "grapple",
-                            "value": "1"
-                        },
-                        {
-                            "name": "damage",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "cracker",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": "1"
-                        },
-                        {
-                            "name": "punch",
-                            "value": "1"
-                        },
-                        {
-                            "name": "grapple",
-                            "value": null
-                        },
-                        {
-                            "name": "damage",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "splitter",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": null
-                        },
-                        {
-                            "name": "punch",
-                            "value": "1"
-                        },
-                        {
-                            "name": "grapple",
-                            "value": "1"
-                        },
-                        {
-                            "name": "damage",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "breaker",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": "1"
-                        },
-                        {
-                            "name": "punch",
-                            "value": null
-                        },
-                        {
-                            "name": "grapple",
-                            "value": "1"
-                        },
-                        {
-                            "name": "damage",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "blaster",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": null
-                        },
-                        {
-                            "name": "punch",
-                            "value": "1"
-                        },
-                        {
-                            "name": "grapple",
-                            "value": "1"
-                        },
-                        {
-                            "name": "damage",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "bomb",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": "1"
-                        },
-                        {
-                            "name": "punch",
-                            "value": null
-                        },
-                        {
-                            "name": "grapple",
-                            "value": "1"
-                        },
-                        {
-                            "name": "damage",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "neck breaker",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": null
-                        },
-                        {
-                            "name": "punch",
-                            "value": "1"
-                        },
-                        {
-                            "name": "grapple",
-                            "value": "1"
-                        },
-                        {
-                            "name": "damage",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "explosion",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": "1"
-                        },
-                        {
-                            "name": "punch",
-                            "value": null
-                        },
-                        {
-                            "name": "grapple",
-                            "value": "1"
-                        },
-                        {
-                            "name": "damage",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "crasher",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": "2"
-                        },
-                        {
-                            "name": "punch",
-                            "value": "1"
-                        },
-                        {
-                            "name": "grapple",
-                            "value": null
-                        },
-                        {
-                            "name": "damage",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "beat down",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": "2"
-                        },
-                        {
-                            "name": "punch",
-                            "value": null
-                        },
-                        {
-                            "name": "grapple",
-                            "value": "1"
-                        },
-                        {
-                            "name": "damage",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "finale",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": "1"
-                        },
-                        {
-                            "name": "punch",
-                            "value": "2"
-                        },
-                        {
-                            "name": "grapple",
-                            "value": null
-                        },
-                        {
-                            "name": "damage",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "attempt",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": null
-                        },
-                        {
-                            "name": "punch",
-                            "value": "2"
-                        },
-                        {
-                            "name": "grapple",
-                            "value": "1"
-                        },
-                        {
-                            "name": "damage",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "dive",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": "1"
-                        },
-                        {
-                            "name": "punch",
-                            "value": null
-                        },
-                        {
-                            "name": "grapple",
-                            "value": "2"
-                        },
-                        {
-                            "name": "damage",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "shake down",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": null
-                        },
-                        {
-                            "name": "punch",
-                            "value": "3"
-                        },
-                        {
-                            "name": "grapple",
-                            "value": "1"
-                        },
-                        {
-                            "name": "damage",
-                            "value": "3"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "kick",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": "3"
-                        },
-                        {
-                            "name": "punch",
-                            "value": "1"
-                        },
-                        {
-                            "name": "grapple",
-                            "value": null
-                        },
-                        {
-                            "name": "damage",
-                            "value": "3"
-                        }
-                    ],
-                    "quantity": "1"
-                }
-            ]
-        },
-        {
-            "type": "Cards",
-            "name": "Move Modifier Deck",
-            "components": [
-                {
-                    "name": "kicking",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "punching",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "smashing",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "slamming",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "backward",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "forward",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "off-balance",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "bizzare",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "half",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "depressing",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "flying",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "iron",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "flaming",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "upside down",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "inverse",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "backward",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "power",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "big",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "disgusting",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "full",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "freezing",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "diving",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "neon",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "stone",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "3"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "soaring",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "3"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "reverse",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "3"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "fancy",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "3"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "evolved",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "3"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "rushing",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "3"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "seething",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "3"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "spirit",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "3"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "steel",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "4"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "overhead",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "4"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "psychotic",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "4"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "furious",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "4"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "destructo",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "damage",
-                            "value": "4"
-                        }
-                    ],
-                    "quantity": "1"
-                }
-            ]
-        },
-        {
-            "type": "Cards",
-            "name": "Move Deck",
-            "components": [
-                {
-                    "name": "punch",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": null
-                        },
-                        {
-                            "name": "punch",
-                            "value": "1"
-                        },
-                        {
-                            "name": "grapple",
-                            "value": null
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "slap",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": null
-                        },
-                        {
-                            "name": "punch",
-                            "value": "1"
-                        },
-                        {
-                            "name": "grapple",
-                            "value": null
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "poke",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": null
-                        },
-                        {
-                            "name": "punch",
-                            "value": "1"
-                        },
-                        {
-                            "name": "grapple",
-                            "value": null
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "flick",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": null
-                        },
-                        {
-                            "name": "punch",
-                            "value": "1"
-                        },
-                        {
-                            "name": "grapple",
-                            "value": null
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "smash",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": null
-                        },
-                        {
-                            "name": "punch",
-                            "value": "2"
-                        },
-                        {
-                            "name": "grapple",
-                            "value": null
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "jab",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": null
-                        },
-                        {
-                            "name": "punch",
-                            "value": "2"
-                        },
-                        {
-                            "name": "grapple",
-                            "value": null
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "roundhouse",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": null
-                        },
-                        {
-                            "name": "punch",
-                            "value": "2"
-                        },
-                        {
-                            "name": "grapple",
-                            "value": null
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "chop",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": null
-                        },
-                        {
-                            "name": "punch",
-                            "value": "3"
-                        },
-                        {
-                            "name": "grapple",
-                            "value": null
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "hook",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": null
-                        },
-                        {
-                            "name": "punch",
-                            "value": "3"
-                        },
-                        {
-                            "name": "grapple",
-                            "value": null
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "uppercut",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": null
-                        },
-                        {
-                            "name": "punch",
-                            "value": "4"
-                        },
-                        {
-                            "name": "grapple",
-                            "value": null
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "grab",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": null
-                        },
-                        {
-                            "name": "punch",
-                            "value": null
-                        },
-                        {
-                            "name": "grapple",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "slam",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": null
-                        },
-                        {
-                            "name": "punch",
-                            "value": null
-                        },
-                        {
-                            "name": "grapple",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "choke",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": null
-                        },
-                        {
-                            "name": "punch",
-                            "value": null
-                        },
-                        {
-                            "name": "grapple",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "throw",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": null
-                        },
-                        {
-                            "name": "punch",
-                            "value": null
-                        },
-                        {
-                            "name": "grapple",
-                            "value": "1"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "nelson",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": null
-                        },
-                        {
-                            "name": "punch",
-                            "value": null
-                        },
-                        {
-                            "name": "grapple",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "suplex",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": null
-                        },
-                        {
-                            "name": "punch",
-                            "value": null
-                        },
-                        {
-                            "name": "grapple",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "grip",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": null
-                        },
-                        {
-                            "name": "punch",
-                            "value": null
-                        },
-                        {
-                            "name": "grapple",
-                            "value": "2"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "toss",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": null
-                        },
-                        {
-                            "name": "punch",
-                            "value": null
-                        },
-                        {
-                            "name": "grapple",
-                            "value": "3"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "bounce",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": null
-                        },
-                        {
-                            "name": "punch",
-                            "value": null
-                        },
-                        {
-                            "name": "grapple",
-                            "value": "3"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "chinlock",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": null
-                        },
-                        {
-                            "name": "punch",
-                            "value": null
-                        },
-                        {
-                            "name": "grapple",
-                            "value": "4"
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "side",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": "1"
-                        },
-                        {
-                            "name": "punch",
-                            "value": null
-                        },
-                        {
-                            "name": "grapple",
-                            "value": null
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "roundhouse",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": "1"
-                        },
-                        {
-                            "name": "punch",
-                            "value": null
-                        },
-                        {
-                            "name": "grapple",
-                            "value": null
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "side",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": "1"
-                        },
-                        {
-                            "name": "punch",
-                            "value": null
-                        },
-                        {
-                            "name": "grapple",
-                            "value": null
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "back",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": "1"
-                        },
-                        {
-                            "name": "punch",
-                            "value": null
-                        },
-                        {
-                            "name": "grapple",
-                            "value": null
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "butterfly",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": "2"
-                        },
-                        {
-                            "name": "punch",
-                            "value": null
-                        },
-                        {
-                            "name": "grapple",
-                            "value": null
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "crescent",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": "2"
-                        },
-                        {
-                            "name": "punch",
-                            "value": null
-                        },
-                        {
-                            "name": "grapple",
-                            "value": null
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "hook",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": "2"
-                        },
-                        {
-                            "name": "punch",
-                            "value": null
-                        },
-                        {
-                            "name": "grapple",
-                            "value": null
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "spinning heel",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": "3"
-                        },
-                        {
-                            "name": "punch",
-                            "value": null
-                        },
-                        {
-                            "name": "grapple",
-                            "value": null
-                        }
-                    ],
-                    "quantity": "1"
-                },
-                {
-                    "name": "calf",
-                    "description": null,
-                    "properties": [
-                        {
-                            "name": "kick",
-                            "value": "3"
-                        },
-                        {
-                            "name": "punch",
-                            "value": null
-                        },
-                        {
-                            "name": "grapple",
-                            "value": null
-                        }
-                    ],
-                    "quantity": "1"
-                }
-            ]
-        },
-        {
             "type": "Dice",
-            "name": "Dice Bag",
+            "name": "Dice",
             "components": [
                 {
+                    "id": "MOkotfjgmgvcArk7w2VEv",
                     "name": "punch",
                     "description": null,
                     "quantity": "-1",
                     "properties": [
                         {
                             "name": "sides",
-                            "value": "8"
+                            "value": "8",
+                            "id": "SAUG3wWR2o_oR-up0yLJW"
                         },
                         {
                             "name": "faces",
@@ -2101,18 +28,21 @@
                                 "miss",
                                 "miss",
                                 "crit"
-                            ]
+                            ],
+                            "id": "kAgEOi9o4OG1CozhSt2-5"
                         }
                     ]
                 },
                 {
+                    "id": "yaaszYW_qQWG0VQYDuE9a",
                     "name": "kick",
                     "description": null,
                     "quantity": "-1",
                     "properties": [
                         {
                             "name": "sides",
-                            "value": "8"
+                            "value": "8",
+                            "id": "Lk4dXudsWwLF1Y-0IzmO0"
                         },
                         {
                             "name": "faces",
@@ -2125,18 +55,21 @@
                                 "miss",
                                 "miss",
                                 "crit"
-                            ]
+                            ],
+                            "id": "K_3arITK624Zx8N4NzY8x"
                         }
                     ]
                 },
                 {
+                    "id": "nNeEJn-wTmsYRTEvRBbSc",
                     "name": "grapple",
                     "description": null,
                     "quantity": "-1",
                     "properties": [
                         {
                             "name": "sides",
-                            "value": "8"
+                            "value": "8",
+                            "id": "50eEa7nRHxFLe-YUVAaqF"
                         },
                         {
                             "name": "faces",
@@ -2149,11 +82,2634 @@
                                 "miss",
                                 "miss",
                                 "crit"
-                            ]
+                            ],
+                            "id": "9BgfZhn4zbz7-TvDAr-xt"
+                        }
+                    ]
+                },
+                {
+                    "id": "cLjRkwaQGy1yGnZ9KEJYp",
+                    "name": "damage",
+                    "description": null,
+                    "quantity": "-1",
+                    "properties": [
+                        {
+                            "name": "sides",
+                            "value": "6",
+                            "id": "4G5jDalk7vFDdHgo93YB-"
+                        },
+                        {
+                            "name": "faces",
+                            "value": [
+                                "1",
+                                "1",
+                                "0",
+                                "0",
+                                "0",
+                                "2"
+                            ],
+                            "id": "4JCdq8xII6PZvwfDeoGrd"
                         }
                     ]
                 }
-            ]
+            ],
+            "id": "0ts_OXPM9qx4tuQhoFpyN"
+        },
+        {
+            "type": "Cards",
+            "name": "Enemy Names Deck",
+            "components": [
+                {
+                    "id": "PRLQMRT5iXLEY_e5i_lJX",
+                    "name": "Johnny",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "1",
+                            "id": "YCYjcGc-YHCm5qYhajW_4"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "1",
+                            "id": "HAnxeUP9l4odNiRO5P_K6"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "gSQ6Wl2caS1x-zPpRrSF4",
+                    "name": "Ricky",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "1",
+                            "id": "9iltx0MxwofexZGrfO2sK"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "1",
+                            "id": "4fv0EDVPjOKrpsyK7RBFQ"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "y2Vx6qNtweRUryfExmy7s",
+                    "name": "Vickie",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "1",
+                            "id": "Fmqznw3rV1PLAmuiSVtQ9"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "1",
+                            "id": "QelwqLXFFtGPy_JAEdaBL"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "XGrjszawVAVEFaXzLMv4F",
+                    "name": "Susan",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "1",
+                            "id": "ZoK35BNsgH5yCixak3MQV"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "1",
+                            "id": "_HG4KrJy2hLH6JWXOfMrW"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "qJm1jV9YUJStrErEClLiC",
+                    "name": "Marty",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "1",
+                            "id": "VYEP_-7Q6mv1pbP45wrgS"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "1",
+                            "id": "XoJE0oQv5PGzQ__BsMzJq"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "TwDC5N24xYuLK3_k7rXzP",
+                    "name": "Steve",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "1",
+                            "id": "bo0Ua1Qlm6Z9i0r4z6aAu"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "1",
+                            "id": "esvULLhdAD4uNmLG6cI7f"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "YV8-HI3sz4DEE_Gxd581W",
+                    "name": "Chuck",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "1",
+                            "id": "y-z5HZa1xumx7nTENptCN"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "1",
+                            "id": "dWd-MiBF2Yc1cBAk4azBO"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "cwR0ueRF8WHW8fAIRCwPD",
+                    "name": "Big",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "1",
+                            "id": "sBx1xOZ-qquMyTqbI3aWF"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "1",
+                            "id": "AF6eW7ktRwtgeIn9JB81J"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "mRhvlI1hbiv6fRYHx-J0d",
+                    "name": "Doofus",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "1",
+                            "id": "g5wsteLbvqVg4AVBDIkyp"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "1",
+                            "id": "rmwHoFTPbbKBWwQFe8E-H"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "DZPst9_9h1l_5ge226Dqv",
+                    "name": "Creamy",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "1",
+                            "id": "BI7_Fgt6--D9ZIiDb5shO"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "1",
+                            "id": "q7G_0iL08U8MiIUuceKhB"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "OSX4oT1AgxlQ3Mhnbwg5T",
+                    "name": "Mr.",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "1",
+                            "id": "dR-M_pLMpBp1Ts7IA-OzF"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "1",
+                            "id": "1WjaYLEoaAqycac1Rjk0W"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "DtYbTW4ZlVq4Bw03NH2DV",
+                    "name": "Dr.",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "1",
+                            "id": "B3d438_rZMeaNrqAKC5Iy"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "1",
+                            "id": "dksI6WMVip6rFIhDw9e5W"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "Sjd9kNWkasXBSK1E0nnH3",
+                    "name": "Bogus",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "2",
+                            "id": "eel0pvaOhlyrBCG4GszNt"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "2",
+                            "id": "gpjMd2uHh01t7H-wKfDS4"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "u6muwLDjsCqEZyezc8M6g",
+                    "name": "Nasty",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "2",
+                            "id": "H1Hdu1x1vys3Eqd2X4-pC"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "2",
+                            "id": "w0R_hk7AL_j32qzDPXGRU"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "fRxLAJJ150IwPxpyuvt4C",
+                    "name": "Nerdy",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "2",
+                            "id": "uvn-LXAN-7G7LnSrR7EBD"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "2",
+                            "id": "SEYX1atflGRUHafQ3oP-G"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "gEk1BQga2jOSMWzf0mkJP",
+                    "name": "Ugly",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "2",
+                            "id": "KsycC75vkgqMa5Jdot6XZ"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "2",
+                            "id": "7I2aBO2GNzY8ClkiCA_7K"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "6oE1p7d7Z-2AkREoWnPBK",
+                    "name": "2-Butts",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "2",
+                            "id": "1HOjYyvyVbEZmh_Rxq6L2"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "2",
+                            "id": "ykqJ_3kGII1K3RyvZWjzf"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "wXtVGk02CKcIovLPsAXTr",
+                    "name": "Corn on the Cob",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "3",
+                            "id": "OLwk2-sfRPQn4SWJmgJjk"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "3",
+                            "id": "uyjlBEQbkkGxuTg4X8gMA"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "wwqYVi_Bpk9mTsFIrSI43",
+                    "name": "Big Shoes",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "3",
+                            "id": "w6O8jsx3cxrMokZCsW_zN"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "3",
+                            "id": "UR_8x7TpXCIWRbEYdkhv0"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "vCFLyd8zwHBG8skOZtH8j",
+                    "name": "No Hands",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "3",
+                            "id": "vsgTgpIlSFF8SG1y_v8HK"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "3",
+                            "id": "pGIoympaapIfqZ3aI7t60"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "Fr7nHfTg1CPYfoVu4BQb_",
+                    "name": "Dragon",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "health",
+                            "value": "4",
+                            "id": "y9Ut-PeIX_9VCHhwOrc4I"
+                        },
+                        {
+                            "name": "attack",
+                            "value": "4",
+                            "id": "OF36HiQTyzKhOrhuP6sgl"
+                        }
+                    ],
+                    "quantity": "1"
+                }
+            ],
+            "id": "ku2YudDepj9ZI0j9tgWAD"
+        },
+        {
+            "type": "Cards",
+            "name": "Enemy Modifier Deck",
+            "components": [
+                {
+                    "id": "mEkbP59QcvS5Tl4tBJHf1",
+                    "name": "Jammer",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "1",
+                            "id": "l2GX-crEWSwGiMvALweQs"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "1",
+                            "id": "PlyXwhsjlmHhEPHjZQgYL"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "FKxSATV9-AuEg_JDwlsYd",
+                    "name": "Slick",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "1",
+                            "id": "TDeJcF18SyV8QI6oR9BzQ"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "1",
+                            "id": "E8jPPbaNkQtQzDFyXrVdy"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "OeIZ0SGsL9cTBWUsz2ROJ",
+                    "name": "Two-Hands",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "1",
+                            "id": "kvZipLn4fO8o5neT1nAWe"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "1",
+                            "id": "lTcespyzyOTimXMyWrcdU"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "CKF9Dg8qsF0NPa89tzPHQ",
+                    "name": "Poppins",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "1",
+                            "id": "BaQzB6VaqpoCNjvP0m6Rj"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "1",
+                            "id": "ctzzm8zgfveKJi-jY4fO8"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "R0YNjY5j_xluztatLB3RN",
+                    "name": "Slammer",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "1",
+                            "id": "4iMPSp_Np3SCTtW5Rw9rw"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "1",
+                            "id": "kpBpn6ZF_eIPT38C60QJt"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "xzqjuUVpKlCC1KXmQXBvj",
+                    "name": "Crispy",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "1",
+                            "id": "GA0ah1yhFod3SvGfeRI9H"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "1",
+                            "id": "lK9JneTLD716wfgmjiuzc"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "6TKt7QH9NQK9Dm4QHirQk",
+                    "name": "9-Fingers",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "1",
+                            "id": "AcZX0Nw1TKElvetm0QDZk"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "1",
+                            "id": "g0NVPfaEBUr8-84bxY8Mo"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "YYA4dT3zmZFXnDXjHgm--",
+                    "name": "Ape",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "1",
+                            "id": "DYTqdACfrNaMnZgQT6MWu"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "1",
+                            "id": "iTPTcguaajyP4YHfohCgv"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "sSvB8I1h0Md6oUatxFs21",
+                    "name": "Death",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "1",
+                            "id": "0mlnUQUU8wWboJMtNRKsm"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "1",
+                            "id": "KRBMyxE_kQdNwcwqhi-cf"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "EkWQ4oB0FN1379yr_IjAy",
+                    "name": "Doom",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "1",
+                            "id": "Qu2qyOaqDZGDflvx1Qm5k"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "1",
+                            "id": "sod2hnk579QQHk1Vtjmd0"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "-at-dO6RQKRQNrgE_4B4K",
+                    "name": "Metalhead",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "1",
+                            "id": "kRFQq9Ue6UGyn5rXbu-gz"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "1",
+                            "id": "i2AdM5IbXBIHbIdsslyh7"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "UPiV0oPoyTdTB2u9hv4kn",
+                    "name": "Macaroni",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "1",
+                            "id": "M3PioK8N8nuBsDMDRf19A"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "1",
+                            "id": "Tutrp7qWys4P9ZKb1a8EZ"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "hJZx1sH7rDEWGNeg6M7lO",
+                    "name": "da Turtle",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "2",
+                            "id": "k2rbtXuDoshy_ZvPQiQJY"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "2",
+                            "id": "amBcv0GtSjd3xBD2wrgIR"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "-hYqoqiqj9_IdzUbFkGA-",
+                    "name": "Stevens",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "2",
+                            "id": "gAWDfTGaZRBAegxTYaGNh"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "2",
+                            "id": "SyMnz6F8xQgpjpWx7DtnG"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "wx_AAbG_GWNmgB8z6-U9-",
+                    "name": "Roberts",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "2",
+                            "id": "1gwk3NC9eKg5SBOalzRkE"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "2",
+                            "id": "s7K4CW0ArF9AGVKFnqYyO"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "_LuSswB1HyvxV7NGOroCK",
+                    "name": "Oiler",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "2",
+                            "id": "_J1Ey60E8Uti823UNKYsj"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "2",
+                            "id": "V3QqRm8b9K7UxmiGAfEnm"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "HVtcvZfrCvn3Hs_KOLdvR",
+                    "name": "da Rat",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "2",
+                            "id": "C0NGuA5toxwEHSpMpsNuD"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "2",
+                            "id": "FyUMO67Ro8pyZ_qUrmZRX"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "M1qGuq426cDUHBAMivaN5",
+                    "name": "da Snake",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "3",
+                            "id": "3Kj_eZvdJrE0Ra-eFXL3E"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "3",
+                            "id": "1fCiPCxYqOUW0LkxWLy6m"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "dnn_BPWNmr6JtfuIS3s28",
+                    "name": "da Bear",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "3",
+                            "id": "w6lQO8KdLBJmYHc-chsyo"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "3",
+                            "id": "IQ5iXnKqTiZixeqXB4lCR"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "RY1T7n1zcg2FM_7mD4rOv",
+                    "name": "da Wolf",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "3",
+                            "id": "D8YDOTBNOxOiy2FETethP"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "3",
+                            "id": "KSbKUDpZwa9AZ9BhvtT4d"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "SkeeKuqPqxnMaMiKmCBIf",
+                    "name": "DeVile",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "4",
+                            "id": "2kz4V2KjOBW-1LvTPiZBV"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "4",
+                            "id": "9HLxi9EiyPF5JDGR4lgx_"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "p459o5Y8BOt1a8hlomCG2",
+                    "name": "Grosse",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "reward",
+                            "value": "4",
+                            "id": "AvSsHJ_FqgrI-xzQ7gxi8"
+                        },
+                        {
+                            "name": "armor",
+                            "value": "4",
+                            "id": "YN91S5ZDNd20bbJB04Lka"
+                        }
+                    ],
+                    "quantity": "1"
+                }
+            ],
+            "id": "Ks3OIMFDiUnqctAadcLQ3"
+        },
+        {
+            "type": "Cards",
+            "name": "Move Finisher Deck",
+            "components": [
+                {
+                    "id": "JY4k2rxGtW4a09VwrCBOB",
+                    "name": "destruction",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1",
+                            "id": "4KxuOG_XhL3IDiHLMXDAi"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null,
+                            "id": "VHi3CdDRVC143-IGF2EVM"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1",
+                            "id": "-5dKqg5oHCeu9FiTdkCjZ"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "1",
+                            "id": "eAGk_T04nOh5W560eLq07"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "tYJaVdoIiG01TRdmgt5pe",
+                    "name": "demolisher",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1",
+                            "id": "DVLU869wy7JRz4sHRjVYO"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "1",
+                            "id": "riXZXLmw3FcqFJ7uyWk2s"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null,
+                            "id": "0hFLjlrnl7YSTH5miq-ci"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "1",
+                            "id": "80bW6Kpj8GW3UgZCI-0fj"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "R9x2uQNiAsylg99YrCtZr",
+                    "name": "annihilation",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1",
+                            "id": "6MJDtf6vIVWzVX5dtokja"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null,
+                            "id": "Z4qZykLIHzaP_U3VRmshV"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1",
+                            "id": "9dIOkN88BvTTIFbOV33xk"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "1",
+                            "id": "hjaWvUGON5NVoLnHbcvHS"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "RXpYUZX33ruJTk9_Jz7A8",
+                    "name": "life-ender",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1",
+                            "id": "cTUq-N2a4cDJxUq5PEeAO"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "1",
+                            "id": "4FczbEZWkS4H4QyWIvAm4"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null,
+                            "id": "TYUqBmn_AGTaUdTqcsRLs"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "1",
+                            "id": "5v20McuTB6qAnQ6QbNkdF"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "nkR1OTMcisZ8SF1XzgBc1",
+                    "name": "bone breaker",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1",
+                            "id": "P-JV4_PtfraZcP8lDU74S"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "1",
+                            "id": "OWed4GFb6f7Ikqik1p8XQ"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null,
+                            "id": "KVLgtJvPoCWVGAc2DxZAF"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "1",
+                            "id": "2ybuOLI-JP8i1uRkV-Z6h"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "F096U29UxGlBLveauFiWW",
+                    "name": "kill factory",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1",
+                            "id": "Yv4tnbkuhRxMKLKFXDybm"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "1",
+                            "id": "HPVMB6kQH00EnpP-9IOxH"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null,
+                            "id": "51IFPpC9pw4zNKY_2i4SU"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "1",
+                            "id": "5TCZVABrODCnlkv_KRjfS"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "c4_WGSP85FUZ9BHf3P3pX",
+                    "name": "skull smasher",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null,
+                            "id": "GIOtsCyFh21nHH0nF9HWG"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "1",
+                            "id": "B5BKpLN9jg5ZXT7rMp9h3"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1",
+                            "id": "EDVQSrX9ciROG5Mj8Y2JU"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "1",
+                            "id": "RgKOVysqmSLyQhW0oxWKA"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "Dn-n3NdhEz_tLu-PM81Rv",
+                    "name": "cracker",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1",
+                            "id": "SoHhYm-Kgc1z3Lb2BkedA"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "1",
+                            "id": "MTMQnsAM3hYZDoYSG1YgV"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null,
+                            "id": "3jjCmUNF5o5x-YI_03dQx"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "1",
+                            "id": "m5Sqp8GxtiwU8U-_gq_9F"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "BnV3xbScoZ0lm8OVBuIDH",
+                    "name": "splitter",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null,
+                            "id": "HTO5FASZjhFJNPiw2g2YM"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "1",
+                            "id": "NJOYm6FV9iUV7Xiank-Sw"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1",
+                            "id": "-TczoZIEnBkRhLvGSmbB7"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "1",
+                            "id": "0wGyLnOflMmmZ61HlYjgn"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "kcQdLdoRcmyRLon7xy97c",
+                    "name": "breaker",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1",
+                            "id": "l9pEyeejTCY6svFAZJuso"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null,
+                            "id": "rWhRBXvHdPTfkcZfMDpcO"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1",
+                            "id": "Yl0-ZCtrM7ghBOVFmDWeR"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "1",
+                            "id": "JnMlbR15yHIgwHziwFjyK"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "hFf0qKiYZVU9BcSN6y1m8",
+                    "name": "blaster",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null,
+                            "id": "AspdswfWUEcebT1aR6ytT"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "1",
+                            "id": "PdGgLz4QrqIlKeuYEpGlM"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1",
+                            "id": "FiAequvnxEfJCiNoIFm0u"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "1",
+                            "id": "i1-pI6T2ZW5jWShRp8QSd"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "WeiRaxh7JFmk3RvNDMikZ",
+                    "name": "bomb",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1",
+                            "id": "ZgK460XyttVrouYrSeYfi"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null,
+                            "id": "QmuNxSRdXPIYydJ6xpQwS"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1",
+                            "id": "rlImCp85HgM4wGYFlVTJi"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "1",
+                            "id": "1b7aeJu15twxlcEuWpVm1"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "G6B_McdrBztWcvEHbpvQX",
+                    "name": "neck breaker",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null,
+                            "id": "GNsI23H_d0r5fQXMgq3F2"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "1",
+                            "id": "cVtIgk0iTta9tW31VJcWN"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1",
+                            "id": "v0OwlxfOLA_nsJGj60nAb"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "1",
+                            "id": "nfVB4Azz-WkIvwVff_PQS"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "PcvcY2n_spNrcOBdZIEZA",
+                    "name": "explosion",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1",
+                            "id": "TRdSJJdKUcs9u6jk0Id9Y"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null,
+                            "id": "vPk6qqqegjZU6dglMycrJ"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1",
+                            "id": "Itmeo6uT28Tqu-LHrFwRF"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "1",
+                            "id": "lvkubzAyCrXGuEgKodo2U"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "0YpfOcQ5GgKqXX3kRciPs",
+                    "name": "crasher",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "2",
+                            "id": "IYgu-Nr2SsJ01ms-pMWB0"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "1",
+                            "id": "VJrrWzmx8xyhbqZn3723p"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null,
+                            "id": "ak9Y4L3mxu0Ae_J6_Sn8P"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "2",
+                            "id": "_CwtaFfTAzPHdfrC_-7yO"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "ktrCl8lqoSa6ndsYMzAG0",
+                    "name": "beat down",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "2",
+                            "id": "QmpZNXM_LuzOTx97_I-m-"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null,
+                            "id": "Mxx5LyVCR9eVAHGMG2k_y"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1",
+                            "id": "gIVuuuvaVnOnP37NdBtB8"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "2",
+                            "id": "qthBEg5uQl7zxEZD-autW"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "54JLAndE-BjZiEjxGwLtz",
+                    "name": "finale",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1",
+                            "id": "qvIiAQRf7AoMvPPcP2MMY"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "2",
+                            "id": "szYTrfdPhPpe1BsC8FKCF"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null,
+                            "id": "vQ-9xeFA2jSKBdMlqCVDo"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "2",
+                            "id": "F2NFyPv1Ryj-pKraA43l-"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "4AkKjhyx9TF1H7HkYmW4o",
+                    "name": "attempt",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null,
+                            "id": "U1keEnq5h4PCdMyn2jndY"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "2",
+                            "id": "WuV0MFsoTFbdZ2j50Gimm"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1",
+                            "id": "ExmYbMBF-EAZasLUVL2zb"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "2",
+                            "id": "V5a0TNGsk_Xv96JBYJcz3"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "t1iFXJba7ky0jUykdzOin",
+                    "name": "dive",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1",
+                            "id": "bwWFvKG2btsBztx_R9E0R"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null,
+                            "id": "q3t8HJ0Tjaex2TELJsdWn"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "2",
+                            "id": "8yk0EaJ2ofHWPaIDIpF-N"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "2",
+                            "id": "8LySd5u07PKmm1JQZ3BOG"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "GXU-yvNm87-vMTQj4aCus",
+                    "name": "shake down",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null,
+                            "id": "SlC4CMSHT1cDtQcSvY_Vy"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "3",
+                            "id": "nGB0aprVWDgU-IxQsanHI"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1",
+                            "id": "ib9RInQzxkDNX8Kbp79Iy"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "3",
+                            "id": "UQhO9rujSrcDlNZemx1ay"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "q6IeBv5I3yh8q6eq6Wrk0",
+                    "name": "kick",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "3",
+                            "id": "-2Wolf9rG8y4QD7Q9zcQf"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "1",
+                            "id": "7IlbQZ9TG0mP0rbzpAFyi"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null,
+                            "id": "6xg1IbYj8lIHeFTSIsbKF"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "3",
+                            "id": "SNUQTmQkP4KvgqzIW1V_w"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "fMBowsGniJGVJDHK4Q54x",
+                    "name": "jutsu",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1",
+                            "id": "Z_2lZC2VQUfSiywAqFihQ"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null,
+                            "id": "0JKfG8xSjYfawPCvbbw1s"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "4",
+                            "id": "APz4jW10QTml2eBe568i0"
+                        },
+                        {
+                            "name": "damage",
+                            "value": "4",
+                            "id": "e0PAy8hGZmRv7KI0qCLTL"
+                        }
+                    ],
+                    "quantity": "1"
+                }
+            ],
+            "id": "SdwYRYamWIJTbYGitOt8H"
+        },
+        {
+            "type": "Cards",
+            "name": "Move Modifier Deck",
+            "components": [
+                {
+                    "id": "wJ8zUd14dwaNJiz_Z77kl",
+                    "name": "kicking",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "1",
+                            "id": "a5QajiVKaZ1TIb7QfXqVL"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "570usXnW2KCatYhYzWnLk",
+                    "name": "punching",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "1",
+                            "id": "_2XXtPloWkBtg7jWrQBKT"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "wAubC_NIDpbVR97wtPYK2",
+                    "name": "smashing",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "1",
+                            "id": "wdbbNHkucRJm9N_At3fuO"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "Bzb0lLeL0goKe3K7MmC3J",
+                    "name": "slamming",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "1",
+                            "id": "Pl-PpSUGWByn3sfUrqWCz"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "nMUVM0fSlE0_qYQ_gOd-3",
+                    "name": "backward",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "1",
+                            "id": "hflE789-fW54NRFr0j-iF"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "VKp8akj1tg7-ONQ9sOSDG",
+                    "name": "forward",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "1",
+                            "id": "LuEsPOQmlydz6kg-0qsXL"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "b-6TKp6ruIKQfLGJhzPbX",
+                    "name": "off-balance",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "1",
+                            "id": "_FXsvOFdQfrSSv-CfYqdH"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "QlpM3eGrAx9hJKaEcR5ao",
+                    "name": "bizzare",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "1",
+                            "id": "kA5ehix3EaVOZEDYBk1gC"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "10Co1sGRsgQsTYCWatgjz",
+                    "name": "half",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "1",
+                            "id": "Rj3bFAdbbOvAeDW0y7hmq"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "3TqWoa5A3VDLMfWxUwi11",
+                    "name": "depressing",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "1",
+                            "id": "lhbXIj4gu2LhggRvq8jle"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "e3TenS_TJIXrTaBucsuD-",
+                    "name": "flying",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "2",
+                            "id": "JjQtbKeyMzXoXH1bg0qta"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "0yWRtYOxvl0zGrQWvdXBv",
+                    "name": "iron",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "2",
+                            "id": "qCgVhZC1gi_wysWzsBcnI"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "xf3k7Js9EiZIoohZCMpQX",
+                    "name": "flaming",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "2",
+                            "id": "zdoSP-LS4tlrFFn9BLra2"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "31TBMu-Ka9E0l_OfV3OAW",
+                    "name": "upside down",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "2",
+                            "id": "3gYP_SfvDGxrH6TA7WIdD"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "020NuHCULQV7yjTnzfZPM",
+                    "name": "inverse",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "2",
+                            "id": "FAJwaBuwPd-DkHzRvv2CG"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "FiL6SAmYuO6anyUGOi5FM",
+                    "name": "backward",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "2",
+                            "id": "7vtELWnc5CX2OlI7_C0Ae"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "E_ccr22afIE0EUtwDbB7k",
+                    "name": "power",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "2",
+                            "id": "ij8OZIOmUThryKWuPCLUm"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "SsftxUIs1x71lGRQE4__x",
+                    "name": "big",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "2",
+                            "id": "gITJZz4_mFpDM2N5Y9BUk"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "_iKRL8OvRa7Ty31a5NQrh",
+                    "name": "disgusting",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "2",
+                            "id": "OD62eLaLhRa3tJSyY7UNT"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "R3qDt8b4whDFwJ9yyKFbc",
+                    "name": "full",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "2",
+                            "id": "zEcRAZh9-tDgI8J9F7sr6"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "F1Hwy52HoO49iyg98KDTK",
+                    "name": "freezing",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "2",
+                            "id": "nrcmtmlFqeHD8UNIvixvH"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "NHYToFThx-XX0VwbyMTbG",
+                    "name": "diving",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "2",
+                            "id": "0iUDE30htzwzvhbktqoa-"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "9mWxpDA_9vQVzv07zr-hK",
+                    "name": "neon",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "2",
+                            "id": "437sfE_9aHZIWy4q3qdFO"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "XPdasK0uhhty-tKjm837q",
+                    "name": "stone",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "3",
+                            "id": "cJFmjD6JFhQIX5IgPUOqn"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "_DKpJD1ThlYlLCF3lI4Qr",
+                    "name": "soaring",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "3",
+                            "id": "qJzC62ti7kxQ9CSIA8-He"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "o5cD00Ur3jwY4XpbMMMLo",
+                    "name": "reverse",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "3",
+                            "id": "embeZCUCUejAY62BwXjlD"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "CQDy__khe2u66HOqnv9rY",
+                    "name": "fancy",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "3",
+                            "id": "rGaIq27IQeMZqQsYWmNoU"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "UQKo7jwswEDv_OFLXOXY2",
+                    "name": "evolved",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "3",
+                            "id": "B8Jf2VYwQvQLLlLqTGDzA"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "YQRO4gXmCRXfXMcoPUGgK",
+                    "name": "rushing",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "3",
+                            "id": "NfWXY1RINMoHfkB-mDlDB"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "hw4RpnMMEojbPSk1_FqKD",
+                    "name": "seething",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "3",
+                            "id": "8pe35VdCT6wnvaD4sVowf"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "VCpyUZUjlbwq8NpqJR3zB",
+                    "name": "spirit",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "3",
+                            "id": "JUihTVScekzA8VgbAT-Nn"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "ja9phOWxTdXnSBuBRvptr",
+                    "name": "steel",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "4",
+                            "id": "5OSo0twOx3nm4uCSBRTsO"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "3_EQfXOyRd6qURiNUZHdT",
+                    "name": "overhead",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "4",
+                            "id": "ulyfsPNOtfH7cSmIO61wk"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "_qmXXt6mV8TbWXXMQ6z_O",
+                    "name": "psychotic",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "4",
+                            "id": "_5LkrXgq4J6p_xbXp9djG"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "yaUkW2RDDPFuBttem4oui",
+                    "name": "furious",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "4",
+                            "id": "SvFP_XdPzIK8C7FtoKnq4"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "6kWBIcFux46TXZFWepslB",
+                    "name": "destructo",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "4",
+                            "id": "aAvm61iRNtd9fZYRlJ3QS"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "V0DiUcU-vMtBelilJu7hd",
+                    "name": "splatter",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "damage",
+                            "value": "4",
+                            "id": "zBaBU1HgBxQaGZHngN_WR"
+                        }
+                    ],
+                    "quantity": "1"
+                }
+            ],
+            "id": "5HjltBwmQSo1RxYIm0IJH"
+        },
+        {
+            "type": "Cards",
+            "name": "Move Deck",
+            "components": [
+                {
+                    "id": "gtayL3IoyrK1_RTUqgSL6",
+                    "name": "punch",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null,
+                            "id": "BJF_VWVPvp2y9n2Bf5gC4"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "1",
+                            "id": "oIQ_6AwAryhvCVM17Gymv"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null,
+                            "id": "eODKZZHBTOSquBeDJoytZ"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "SuZzCPgkOvYFF2xmqFkIp",
+                    "name": "slap",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null,
+                            "id": "zm8rTMYxV2A447rsT3rUa"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "1",
+                            "id": "irt5IJLJgLGOcpiiUXeKu"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null,
+                            "id": "-Sa2b40mUTSuR7beNIRYn"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "lgKCc7Y36dA8fMZAnuhP9",
+                    "name": "poke",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null,
+                            "id": "hudtDZ0CABHu6kQC8amj_"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "1",
+                            "id": "5I8L0wro7zMYtmI-nc32x"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null,
+                            "id": "xENdhTbavvOM4d5xC5RX7"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "d9nlB1tgahcC6qWsptM1T",
+                    "name": "flick",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null,
+                            "id": "Pj6XizYXGlq6-ZK17t8NK"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "1",
+                            "id": "JnHYQMAPfRn9K3afsLVmV"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null,
+                            "id": "sIfLX7-KdNz53SaXcNvJP"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "32smx4MGtzaPVRJJtmQ_0",
+                    "name": "smash",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null,
+                            "id": "fNjKZGdzUqZVCHaxxFCLU"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "2",
+                            "id": "hELb9SaBAKoldkKQp1Ysi"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null,
+                            "id": "HVrWB2P6rSoWxC4Q4Y1Vk"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "fuEd-YIf0Jfug9mGzd_kZ",
+                    "name": "jab",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null,
+                            "id": "a-ss2XNiUr1a6ucTKddd2"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "2",
+                            "id": "8IKutoyV9APcD1CQP93xL"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null,
+                            "id": "gQlYNa4ibK1aZSXWvEs1l"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "hudrohlXl28Jt0G0QudkP",
+                    "name": "roundhouse",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null,
+                            "id": "4K_xtgj7zcg9I2L2oQtah"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "2",
+                            "id": "gRTUNSC2AAcq8YduOvklY"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null,
+                            "id": "Qv1PzHs4Iqwpidj6myp8Z"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "dudv7EC0ibtBvS47l0uk-",
+                    "name": "chop",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null,
+                            "id": "xYZd4Gvo6w2q0o8nPvr6Y"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "3",
+                            "id": "eYaNgpcOXAg_qYdQ5v5zo"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null,
+                            "id": "KkhLNLNLr3rpl6p8G02Kl"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "yBPew_FBrYlTMz01IdGPU",
+                    "name": "hook",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null,
+                            "id": "Tq6cZZxoJALUAKQy1f_zK"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "3",
+                            "id": "ozdrmOghPSAmqZJ6AdZ82"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null,
+                            "id": "KYEo44DFycFKvbymkJzQd"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "fZsC0n4CIBSFpg31Y20ij",
+                    "name": "uppercut",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null,
+                            "id": "Sbkay57DeiRQtHQclldzk"
+                        },
+                        {
+                            "name": "punch",
+                            "value": "4",
+                            "id": "x4_ywxy7dtmnyKGQwFDrB"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null,
+                            "id": "S10OS4h8_EIUaRcuz9K6u"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "u7QMzr_p8YpyOnBcic2HI",
+                    "name": "grab",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null,
+                            "id": "Sv3KCK2NDzi8NZadDLLXq"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null,
+                            "id": "GitpraUvJ947EFNIOZBcL"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1",
+                            "id": "cHbNPUQHwvSoHtgomUJky"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "KIrsnesMIwUs7Txtw1B7F",
+                    "name": "slam",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null,
+                            "id": "iXVS8tfQboLhwY_FMN3kn"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null,
+                            "id": "fDvy6O_BZGvLoOAjGt0Vi"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1",
+                            "id": "0v96BFDOAU627LqNP-F8T"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "3WFGXKFcgW6yxcxTRYRU9",
+                    "name": "choke",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null,
+                            "id": "oGKm3Ind5mTukRiwgu2_i"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null,
+                            "id": "vEzEU3TAsOn_QflyEA5Tw"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1",
+                            "id": "1LOBzewUx7ogkiEw7hECV"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "tqKLcou4uQAxt4GArMCLG",
+                    "name": "throw",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null,
+                            "id": "FBF-pf63pqZltd-UpZ177"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null,
+                            "id": "8p_9u5xWCIqUDiLSW51xG"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "1",
+                            "id": "MKr6nj7IZNN0u3uOgdffC"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "fsCsxp3C0Dj_HHnbbTqtA",
+                    "name": "nelson",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null,
+                            "id": "kQZjj247KsOGPvSjvBvUD"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null,
+                            "id": "BWl8kMzEpfg3jILzjBOz0"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "2",
+                            "id": "L6P7mjcEUhfmqLEPuBuQG"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "Ncx0KU0djb2g3kW5NOhub",
+                    "name": "suplex",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null,
+                            "id": "_WZ32AgXzIf0AM9WQrtIC"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null,
+                            "id": "_c6eLyBPvK7QeGtrHDqpR"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "2",
+                            "id": "w3aJZUfogUOrRezRXAaCk"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "Ghl_YYEjBT3N1trlXLqXR",
+                    "name": "grip",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null,
+                            "id": "x0EHA030cPWjQEKuuOYgZ"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null,
+                            "id": "JybPEpVp7km_ly657N3wv"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "2",
+                            "id": "PGZZGwDeQLPZ4kR7l3brT"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "-dJkwKkl-Dgv3Y-ZFwtqx",
+                    "name": "toss",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null,
+                            "id": "Pmd_zKVTnkbAzUKihvOEb"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null,
+                            "id": "1vm4ee7uocOxW0lLT-p8D"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "3",
+                            "id": "ZYHNW4Z-6_gWuRBvDaucy"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "P4PqShVF-xdKEV4cgNR6i",
+                    "name": "bounce",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null,
+                            "id": "CTTjL05mHnCT_bv_-_Z2N"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null,
+                            "id": "CKOasseCKfpjs0Zc9zSkB"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "3",
+                            "id": "1yONc6FTlEwhfoQjTcjnm"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "DhTI3-2JAbYp8OG8SCuNL",
+                    "name": "chinlock",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": null,
+                            "id": "JSLsaPCQ44SWWSU-YpkHX"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null,
+                            "id": "bHfuPDeZAreOOZAJDMmDm"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": "4",
+                            "id": "RLPPLvgCGtO_Vaz0OClU-"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "2deoMhxzbA2uapYAyhBm5",
+                    "name": "side",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1",
+                            "id": "_WhpGijDZn0unJOVzqcWh"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null,
+                            "id": "-R43gMEP-DvsyJGLH7ScK"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null,
+                            "id": "IrVmHOeQQ_jWyw9ZLBpyK"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "8zUjglQAe4uUzFwXyhJtq",
+                    "name": "roundhouse",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1",
+                            "id": "W7x2-b9t4rR3f79uOpIkP"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null,
+                            "id": "z1v6veihRX68mEjjy2nRx"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null,
+                            "id": "9F6vxH2bcfKCIJYReZLFU"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "tkrFAi70Fhb2C4z9LXTh5",
+                    "name": "side",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1",
+                            "id": "RgYvz-LJ5v-29qbCdYhyR"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null,
+                            "id": "CF6uZgs-JdI7Z2m2B6jVs"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null,
+                            "id": "wfXz6WTRwSe9kpzayKSiC"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "L3QlJFvSZYPxPSnrNNBct",
+                    "name": "back",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "1",
+                            "id": "b_9ENweqNzYyL8BQ62x88"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null,
+                            "id": "y0E8zdGESC1qw-yQgb47V"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null,
+                            "id": "9ZmYODZnVQMn-Hv4VymHS"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "lOs9fRocuwspz6lmOnkTU",
+                    "name": "butterfly",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "2",
+                            "id": "Us__yrA7YD1ipNEpeIsfV"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null,
+                            "id": "REKybDNECRBRq905g-FE6"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null,
+                            "id": "oEWmNVs_F8xeRm0xBu_W5"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "N_yUNsikIvNJDmVj6zSo8",
+                    "name": "crescent",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "2",
+                            "id": "eOSKrgSfbnLDj5f9IDq8f"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null,
+                            "id": "c516JpuiWs6JAxSQaDxRW"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null,
+                            "id": "OUNFYuSnuQ0XOSaaUqLVJ"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "N10wWk6oHCBiIBN2u3iTV",
+                    "name": "hook",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "2",
+                            "id": "SCQhT0U3G6kIf_U18BaDq"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null,
+                            "id": "TAMgFpDhR_xDS8NJp7v7E"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null,
+                            "id": "jTsdazWWL2OSAAuEk26IG"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "fRgxsPlIvCqff4s2GUxWt",
+                    "name": "spinning heel",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "3",
+                            "id": "HBlZG6sYX_WFRA14qxwJI"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null,
+                            "id": "trokQWY9O8HCG9OpGPrOP"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null,
+                            "id": "7KJTrW-XFwHPoviQYGfDF"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "k6zJb4DodV-OUX7m91WsT",
+                    "name": "calf",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "3",
+                            "id": "PgEtYLKfqnzJxk-Vtr5-X"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null,
+                            "id": "FJW9_2YfNLBLnCIyCcU70"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null,
+                            "id": "jY7TETDyuo8yoPOhVuF3K"
+                        }
+                    ],
+                    "quantity": "1"
+                },
+                {
+                    "id": "sVby5cR3PLNce_1vUSwri",
+                    "name": "axe",
+                    "description": null,
+                    "properties": [
+                        {
+                            "name": "kick",
+                            "value": "4",
+                            "id": "8gYc2gTJ2QdJOo6Wx-PX1"
+                        },
+                        {
+                            "name": "punch",
+                            "value": null,
+                            "id": "JMGdkxeyt1wHekm4zDQX-"
+                        },
+                        {
+                            "name": "grapple",
+                            "value": null,
+                            "id": "4Vc9aSE5Yf3lXPqjqFGaQ"
+                        }
+                    ],
+                    "quantity": "1"
+                }
+            ],
+            "id": "GVgVGJWctZt5zGuEi_uvL"
         }
     ]
 }
