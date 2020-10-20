@@ -9,6 +9,7 @@ import { db } from '../services/Database';
 import GameBox from '../components/GameBox';
 import ComponentMenu from '../components/ComponentMenu';
 import PlayersMenu from '../components/PlayersMenu';
+import MainMenu from '../components/MainMenu';
 
 interface Props extends RouteComponentProps<
   {
@@ -32,6 +33,8 @@ const Game: React.FunctionComponent<Props> = ({
 }) => {
   const [playerId, setPlayerId] = useState<string>(state.playerId);
   const [game, setGame] = useState<Game | undefined>(undefined);
+  const [isComponentsOpen, setIsComponentsOpen] = useState<boolean>(false);
+  const [isPlayersOpen, setIsPlayersOpen] = useState<boolean>(false);
 
   useEffect(() => {
     function documentDataToGame(documentData: firebase.firestore.DocumentData): Game {
@@ -81,17 +84,24 @@ const Game: React.FunctionComponent<Props> = ({
 
   return (
     <>
-      <h1>Game ID {id}</h1>
+      <MainMenu
+        endTurn={endTurn}
+        gameId={id}
+        openComponentsMenu={() => { setIsComponentsOpen(true); }}
+        openPlayersMenu={() => { setIsPlayersOpen(true); }}
+        currentPlayer={game.players.find(player => player.id === game.currentPlayer)}
+        playerId={playerId}
+      />
+      <h1>{game.box.name}</h1>
       <div className="game_zone">
         <div className="game_zone--main">
           <GameBox component={game.box} />
-          <div style={{ height: '50vh', }}>
-            Play Area
-          </div>
         </div>
         <div className="game_zone--sidebar">
-          <ComponentMenu game={game.box} />
-          <PlayersMenu game={game} playerId={playerId} endTurn={endTurn} />
+          {isComponentsOpen ? <ComponentMenu game={game.box} closeMenu={() => { setIsComponentsOpen(false); }} /> : null}
+          {isPlayersOpen
+            ? <PlayersMenu game={game} playerId={playerId} closeMenu={() => { setIsPlayersOpen(false); }} />
+            : null}
         </div>
       </div>
     </>

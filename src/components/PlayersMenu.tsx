@@ -2,19 +2,20 @@ import React from 'react';
 
 interface Props 
 {
-  endTurn: Function;
   game: Game;
   playerId: string;
+  closeMenu: () => void;
 }
 
 const Game: React.FC<Props> = ({
-  endTurn,
   game,
   playerId,
+  closeMenu,
 }) => {
   return (
-    <section>
+    <section className="modal">
       <h2>Players</h2>
+      <button type="button" onClick={closeMenu}>close</button>
       <ul>
         {game.players.map((player: Player) => (
           <li key={player.id}>
@@ -23,7 +24,6 @@ const Game: React.FC<Props> = ({
           </li>
         ))}
       </ul>
-      <button type="button" onClick={endTurn}>End Turn</button>
     </section>
   );
 };

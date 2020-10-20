@@ -11,18 +11,48 @@ h1, h2 {
   font-weight: 900;
 }
 
+.main_menu {
+  background-color: rosybrown;
+  padding: 4px;
+  color: darkslateblue;
+}
+.main_menu--title {
+  font-weight: 900;
+}
+.main_menu--control_row {
+  display: flex;
+  justify-content: space-between;
+}
+.main_menu--control {
+  background: darkslateblue;
+  color: whitesmoke;
+  font-size: 0.65rem;
+  border: none;
+  border-radius: .25rem;
+  margin-left: 4px;
+  cursor: pointer;
+}
+.main_menu--info_row {
+  font-size: .65rem;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  padding: 1rem;
+  background-color: whitesmoke;
+}
+
 .game_zone {
   display: grid;
 }
-.game_zone--sidebar {
-  background-color: gainsboro;
-  grid-row: 0;
-  grid-column: 1/1;
-  padding: 16px;
-}
 .game_zone--main {
   grid-row: 1;
-  grid-column: 2/8;
+  grid-column: 1;
   background-color: whitesmoke;
 }
 
