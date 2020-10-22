@@ -127,7 +127,7 @@ const Game: React.FunctionComponent<Props> = ({
               }}
             >
               {game.table ? game.table.items.map((item) => (
-                <Draggable id="1" position={item.position}>
+                <Draggable key={item.id} id={item.id} position={item.position}>
                   <div>
                     test
                   </div>
