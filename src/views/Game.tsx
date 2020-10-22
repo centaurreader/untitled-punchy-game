@@ -3,6 +3,8 @@ import React, {
   useState,
 } from 'react';
 import { RouteComponentProps  } from 'react-router';
+import { DndProvider, } from 'react-dnd';
+import { HTML5Backend, } from 'react-dnd-html5-backend';
 import { db } from '../services/Database';
 
 // temp
@@ -10,6 +12,9 @@ import GameBox from '../components/GameBox';
 import ComponentMenu from '../components/ComponentMenu';
 import PlayersMenu from '../components/PlayersMenu';
 import MainMenu from '../components/MainMenu';
+import Table from '../components/Table';
+import Draggable from '../components/Draggable';
+import DiceComponent from '../components/DiceComponent';
 
 interface Props extends RouteComponentProps<
   {
@@ -31,6 +36,7 @@ const Game: React.FunctionComponent<Props> = ({
     },
   },
 }) => {
+  const [contextMenuPosition, setContextMenuPosition] = useState<DraggablePosition>({ x: 0, y: 0 });
   const [playerId, setPlayerId] = useState<string>(state.playerId);
   const [game, setGame] = useState<Game | undefined>(undefined);
   const [isComponentsOpen, setIsComponentsOpen] = useState<boolean>(false);
@@ -44,6 +50,7 @@ const Game: React.FunctionComponent<Props> = ({
         currentTurn: data.currentTurn,
         players: data.players,
         box: data.box,
+        table: { items: [ { id: '1', position: { x: 20, y: 30, }, }], },
       };
     }
 
@@ -73,9 +80,25 @@ const Game: React.FunctionComponent<Props> = ({
         currentTurn: isRoundOver ? (data.currentTurn + 1) : data.currentTurn,
         players,
         box: data.box,
+        table: { items: [], },
       };
       docRef.update(updatedGame);
     });
+  };
+
+  const moveItem = (toMove: Draggable) => {
+    console.log(toMove);
+    setGame((state) => ({
+      currentPlayer: state ? state.currentPlayer : '',
+      currentTurn: state ? state.currentTurn : 0,
+      players: state ? state.players : [],
+      box: state ? state.box : null,
+      table: { items: [
+        ...(state
+          ? state.table.items.map((item) => item.id === toMove.id ? toMove : item)
+          : []),
+      ], },
+    }));
   };
 
   if (!game) {
@@ -87,18 +110,39 @@ const Game: React.FunctionComponent<Props> = ({
       <MainMenu
         endTurn={endTurn}
         gameId={id}
-        openComponentsMenu={() => { setIsComponentsOpen(true); }}
         openPlayersMenu={() => { setIsPlayersOpen(true); }}
         currentPlayer={game.players.find(player => player.id === game.currentPlayer)}
         playerId={playerId}
       />
-      <h1>{game.box.name}</h1>
+      <h1>{game.box ? game.box.name : ''}</h1>
       <div className="game_zone">
         <div className="game_zone--main">
           <GameBox component={game.box} />
+          <DndProvider backend={HTML5Backend}>
+            <Table
+              onDrop={moveItem}
+              onClick={(position: DraggablePosition) => {
+                setContextMenuPosition(isComponentsOpen ? contextMenuPosition : position);
+                setIsComponentsOpen(state => !state);
+              }}
+            >
+              {game.table ? game.table.items.map((item) => (
+                <Draggable id="1" position={item.position}>
+                  <div>
+                    test
+                  </div>
+                </Draggable>
+              )) : null}
+            </Table>
+          </DndProvider>
         </div>
         <div className="game_zone--sidebar">
-          {isComponentsOpen ? <ComponentMenu game={game.box} closeMenu={() => { setIsComponentsOpen(false); }} /> : null}
+          <ComponentMenu
+            closeMenu={() => { setIsComponentsOpen(false); }}
+            game={game.box}
+            isOpen={isComponentsOpen}
+            position={contextMenuPosition}
+          />
           {isPlayersOpen
             ? <PlayersMenu game={game} playerId={playerId} closeMenu={() => { setIsPlayersOpen(false); }} />
             : null}

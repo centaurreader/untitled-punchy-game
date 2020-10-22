@@ -43,6 +43,7 @@ const Home: React.FunctionComponent<RouteComponentProps<any>> = ({
           { name: joinName, id: playerId, },
         ],
         box: data.box,
+        table: { items: [], },
       };
       docRef.update(game).then(() => {
         redirectToGameInstance(doc.id, playerId);
@@ -70,6 +71,7 @@ const Home: React.FunctionComponent<RouteComponentProps<any>> = ({
       currentTurn: 0,
       players: [player],
       box: box || { name: '', componentGroups: [], },
+      table: { items: [], },
     };
     db.collection('games').add(game)
     .then((docRef) => {

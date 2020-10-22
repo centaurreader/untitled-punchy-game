@@ -4,14 +4,12 @@ const MainMenu: React.FC<{
   currentPlayer: Player|undefined;
   endTurn: () => void,
   gameId: string;
-  openComponentsMenu: () => void;
   openPlayersMenu: () => void;
   playerId: string;
 }> = ({
   currentPlayer = {},
   endTurn,
   gameId,
-  openComponentsMenu,
   openPlayersMenu,
   playerId,
 }) => {
@@ -23,13 +21,6 @@ const MainMenu: React.FC<{
           {currentPlayer.id === playerId
             ? (<button type="button" className="main_menu--control" onClick={endTurn}>End Turn</button>)
             : null}
-          <button
-            type="button"
-            className="main_menu--control"
-            onClick={openComponentsMenu}
-          >
-            Components
-          </button>
           <button
             type="button"
             className="main_menu--control"

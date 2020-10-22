@@ -3,12 +3,23 @@ interface Player {
   name: string;
   id: string;
 }
-
 interface Game {
   players: Array<Player>;
   currentPlayer: Player.id;
   currentTurn: number;
-  box: Box;
+  box: Box | null;
+  table: Table;
+}
+interface Table {
+  items: Array<Draggable>;
+}
+interface Draggable {
+  position: DraggablePosition;
+  id: string;
+}
+interface DraggablePosition {
+  x: number;
+  y: number;
 }
 
 // Game Defintion
