@@ -11,7 +11,10 @@ interface Game {
   table: Table;
 }
 interface Table {
-  items: Array<Draggable>;
+  items: Array<TableItem>;
+}
+interface TableItem extends Draggable {
+  component: Component|ComponentGroup;
 }
 interface Draggable {
   position: DraggablePosition;

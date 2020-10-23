@@ -6,17 +6,19 @@ const MainMenu: React.FC<{
   gameId: string;
   openPlayersMenu: () => void;
   playerId: string;
+  title: string;
 }> = ({
   currentPlayer = {},
   endTurn,
   gameId,
   openPlayersMenu,
   playerId,
+  title,
 }) => {
   return (
     <div className="main_menu">
       <div className="main_menu--control_row">
-        <div className="main_menu--title">UPG Sandbox</div>
+        <h1 className="main_menu--title">{title}</h1>
         <div>
           {currentPlayer.id === playerId
             ? (<button type="button" className="main_menu--control" onClick={endTurn}>End Turn</button>)

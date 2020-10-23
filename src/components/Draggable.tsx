@@ -2,16 +2,19 @@ import React from 'react';
 import { useDrag, DragSourceHookSpec } from 'react-dnd';
 
 const Draggable: React.FC<{
-  id: string;
-  position: DraggablePosition;
+  item: TableItem;
 }> = ({
   children,
-  id,
-  position,
+  item,
 }) => {
   const type = 'game-item';
   const [{ isDragging }, drag] = useDrag({
-    item: { id, type, position, },
+    item: {
+      id: item.id,
+      type,
+      position: item.position,
+      component: item.component,
+    },
     collect: (monitor) => ({
       isDragging: !!monitor.isDragging(),
     }),
@@ -25,7 +28,7 @@ const Draggable: React.FC<{
     <button
       ref={drag}
       type="button"
-      style={{ position: 'absolute', left: position.x, top: position.y, }}
+      style={{ position: 'absolute', left: item.position.x, top: item.position.y, }}
     >
       {children}
     </button>

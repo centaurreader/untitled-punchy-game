@@ -2,6 +2,16 @@
 
 * { box-sizing: border-box; }
 
+html, body {
+  margin: 0;
+  padding: 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+#app { display: flex; flex-direction: column; flex: 1; }
+
 body {
   background-color: whitesmoke;
   font-family: 'Commissioner', sans-serif;
@@ -12,25 +22,31 @@ h1, h2 {
 }
 
 .main_menu {
-  background-color: rosybrown;
-  padding: 4px;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 2px 2px 0px rgba(0,0,0,0.2);
   color: darkslateblue;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
 }
 .main_menu--title {
+  font-size: 1.5rem;
   font-weight: 900;
+  margin: 0 0 .5rem;
 }
 .main_menu--control_row {
   display: flex;
   justify-content: space-between;
 }
 .main_menu--control {
-  background: darkslateblue;
+  background: cadetblue;
   color: whitesmoke;
-  font-size: 0.65rem;
+  font-size: 0.85rem;
   border: none;
   border-radius: .25rem;
   margin-left: 4px;
   cursor: pointer;
+  padding: .45rem;
 }
 .main_menu--info_row {
   font-size: .65rem;
@@ -41,16 +57,56 @@ h1, h2 {
   border-radius: 1rem;
   box-shadow: 0 2px 2px 0px rgba(0,0,0,0.2);
   opacity: 0;
-  padding: 1rem;
   position: absolute;
   transform: scale(0) translate(-50%, -50%);
   transform-origin: 0 0;
+  height: 18vh;
+  width: 200px;
+  overflow: hidden;
 }
 .context_menu-open {
   opacity: 1;
   transform: scale(1) translate(-50%, -50%);
   transition: transform .125s;
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.context_menu h2 {
+  margin: 0;
+  padding: 1rem;
+  border-bottom: 1px solid whitesmoke;
+  font-size: 1.25rem;
+  color: midnightblue;
+}
+.context_menu--list {
+  list-style-type: none;
+  margin: 0;
+  overflow-y: scroll;
+  padding: 0;
+  height: 13vh;
+  width: 100%;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  position: absolute;
+  top: 0;
+  transition: left .25s;
+  background: white;
+  transition-timing-function: cubic-bezier(0.59, -0.22, 0, 1.1);
+  width: calc(100% + 1px);
+}
+.context_menu--list::-webkit-scrollbar {
+  display: none;
+}
+.context_menu--selection {
+  border: none;
+  color: cadetblue;
+  background-color: transparent;
+  padding: .5rem 1rem;
+  border-bottom: 1px solid whitesmoke;
+  font-weight: 700;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  cursor: pointer;
 }
 
 .modal {
@@ -64,13 +120,9 @@ h1, h2 {
   background-color: whitesmoke;
 }
 
-.game_zone {
-  display: grid;
-}
-.game_zone--main {
-  grid-row: 1;
-  grid-column: 1;
-  background-color: whitesmoke;
+.game_board {
+  flex: 1;
+  position: relative;
 }
 
 .box {

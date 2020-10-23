@@ -4,6 +4,7 @@ import { DragObjectWithType, useDrop, } from 'react-dnd';
 interface DroppedItem extends DragObjectWithType {
   id: string;
   position: DraggablePosition;
+  component: Component;
 }
 
 const Table: React.FC<{
@@ -26,7 +27,8 @@ const Table: React.FC<{
           position: {
             x: Math.round(item.position.x + delta.x),
             y: Math.round(item.position.y + delta.y),
-          }
+          },
+          component: item.component,
         },
       );
     },
@@ -47,7 +49,7 @@ const Table: React.FC<{
     <div
       ref={drop}
       onClick={handleClick}
-      style={{ position: 'relative', height: '1000px', width: '1000px', background: 'whitesmoke', }}
+      className="game_board"
     >
       {children}
     </div>
