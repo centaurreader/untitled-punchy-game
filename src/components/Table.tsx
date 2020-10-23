@@ -5,6 +5,7 @@ interface DroppedItem extends DragObjectWithType {
   id: string;
   position: DraggablePosition;
   component: Component;
+  componentType: ComponentTypes;
 }
 
 const Table: React.FC<{
@@ -29,6 +30,7 @@ const Table: React.FC<{
             y: Math.round(item.position.y + delta.y),
           },
           component: item.component,
+          componentType: item.componentType,
         },
       );
     },

@@ -15,6 +15,7 @@ interface Table {
 }
 interface TableItem extends Draggable {
   component: Component|ComponentGroup;
+  componentType: ComponentTypes;
 }
 interface Draggable {
   position: DraggablePosition;

@@ -1,14 +1,20 @@
 import { nanoid } from 'nanoid';
 import React from 'react';
+import { Content, } from './ComponentMenu';
 
 const ComponentMenuListItem: React.FC<{
   addItem: (item: TableItem) => void;
   componentGroup: ComponentGroup|Component;
-  onSelect: (componentGroup: Array<ComponentGroup|Component>) => void;
-}> = ({ addItem, componentGroup, onSelect, }) => {
+  onSelect: (content: Content) => void;
+  type: ComponentTypes;
+}> = ({ addItem, componentGroup, onSelect, type, }) => {
   const toggleGroup = () => {
     "components" in componentGroup
-      ? onSelect(componentGroup.components)
+      ? onSelect({
+        content: componentGroup.components,
+        type: componentGroup.type,
+        id: nanoid(),
+      })
       : addItem({
         component: componentGroup,
         position: {
@@ -16,6 +22,7 @@ const ComponentMenuListItem: React.FC<{
           y: 0,
         },
         id: nanoid(),
+        componentType: type,
       });
   };
 

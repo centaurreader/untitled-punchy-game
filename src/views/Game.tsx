@@ -12,6 +12,7 @@ import PlayersMenu from '../components/PlayersMenu';
 import MainMenu from '../components/MainMenu';
 import Table from '../components/Table';
 import Draggable from '../components/Draggable';
+import Component from '../components/Component';
 
 interface Props extends RouteComponentProps<
   {
@@ -137,9 +138,10 @@ const Game: React.FunctionComponent<Props> = ({
               key={item.id}
               item={item}
             >
-              <div>
-                {item.component.name}
-              </div>
+              <Component
+                name={item.component.name}
+                type={item.componentType}
+              />
             </Draggable>
           )) : null}
         </Table>

@@ -1,5 +1,12 @@
+import { nanoid } from 'nanoid';
 import React, { useEffect, useState } from 'react';
 import ComponentMenuListItem from './ComponentMenuListItem';
+
+export interface Content {
+  content: Array<ComponentGroup|Component>;
+  type?: ComponentTypes;
+  id: string;
+}
 
 const ComponentMenu: React.FC<{
   addItem: (item: TableItem) => void;
@@ -7,19 +14,25 @@ const ComponentMenu: React.FC<{
   isOpen: boolean;
   position: DraggablePosition;
 }> = ({ addItem, game, isOpen, position, }) => {
-  const [menuContent, setMenuContent] = useState<Array<Array<ComponentGroup|Component>>>([
-    game?.componentGroups ?? [],
+  const [menuContent, setMenuContent] = useState<Array<Content>>([
+    {
+      content: game?.componentGroups ?? [],
+      id: nanoid(),
+    }
   ]);
 
   useEffect(() => {
     if (!isOpen) {
       setMenuContent([
-        game?.componentGroups ?? [],
+        {
+          content: game?.componentGroups ?? [],
+          id: nanoid(),
+        }
       ]);
     }
   }, [isOpen, setMenuContent]);
 
-  const pushMenuContent = (content: Array<ComponentGroup|Component>) => {
+  const pushMenuContent = (content: Content) => {
     setMenuContent(state => [
       ...state,
       content,
@@ -33,21 +46,22 @@ const ComponentMenu: React.FC<{
     >
       <h2>Components</h2>
       <div style={{ position: 'relative', }}>
-        {menuContent.map((content, i) => (
+        {menuContent.map((list, i) => (
           <ul
+            key={list.id}
             className="context_menu--list"
             style={{
               left: `${100 * ((menuContent.length - (i + 1)) * -1)}%`,
               zIndex: menuContent.length - i,
             }}
           >
-            {content.map((componentGroup) => (
+            {list.content.map((componentGroup) => (
               <ComponentMenuListItem
                 addItem={addItem}
                 componentGroup={componentGroup}
                 key={componentGroup.id}
-                id={componentGroup.id}
                 onSelect={pushMenuContent}
+                type={list.type}
               />
             ))}
           </ul>

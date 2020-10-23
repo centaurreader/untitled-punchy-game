@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDrag, DragSourceHookSpec } from 'react-dnd';
+import { useDrag, } from 'react-dnd';
 
 const Draggable: React.FC<{
   item: TableItem;
@@ -14,6 +14,7 @@ const Draggable: React.FC<{
       type,
       position: item.position,
       component: item.component,
+      componentType: item.componentType,
     },
     collect: (monitor) => ({
       isDragging: !!monitor.isDragging(),
@@ -28,7 +29,14 @@ const Draggable: React.FC<{
     <button
       ref={drag}
       type="button"
-      style={{ position: 'absolute', left: item.position.x, top: item.position.y, }}
+      style={{
+        position: 'absolute',
+        left: item.position.x,
+        top: item.position.y,
+        border: 0,
+        backgroundColor: 'transparent',
+        outline: 'none',
+      }}
     >
       {children}
     </button>
