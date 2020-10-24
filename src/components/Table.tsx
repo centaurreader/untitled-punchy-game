@@ -16,7 +16,6 @@ const Table: React.FC<{
   onClick,
   onDrop,
 }) => {
-
   const [, drop] = useDrop({
     accept: 'game-item',
     drop: (item: DroppedItem, monitor) => {

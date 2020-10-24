@@ -48,7 +48,7 @@ const Game: React.FunctionComponent<Props> = ({
         currentTurn: data.currentTurn,
         players: data.players,
         box: data.box,
-        table: { items: [], },
+        table: { items: data.table.items || [], },
       };
     }
 
@@ -60,6 +60,11 @@ const Game: React.FunctionComponent<Props> = ({
       setGame(documentDataToGame(doc));
     });
   }, []);
+
+  useEffect(() => {
+    const docRef = db.collection('games').doc(id);
+    docRef.update(game || {});
+  }, [game]);
 
   const endTurn = () => {
     const docRef = db.collection('games').doc(id);

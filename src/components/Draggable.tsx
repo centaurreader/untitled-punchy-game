@@ -23,9 +23,8 @@ const Draggable: React.FC<{
   }
 
   return (
-    <button
+    <div
       ref={drag}
-      type="button"
       style={{
         position: 'absolute',
         left: item.position.x,
@@ -36,7 +35,7 @@ const Draggable: React.FC<{
       }}
     >
       {children}
-    </button>
+    </div>
   );
 };
 
