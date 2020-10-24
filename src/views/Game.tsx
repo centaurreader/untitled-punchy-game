@@ -102,7 +102,7 @@ const Game: React.FunctionComponent<Props> = ({
     }));
   };
 
-  const moveItem = (toMove: TableItem) => {
+  const updateItem = (item: TableItem) => {
     setGame((state) => ({
       currentPlayer: state ? state.currentPlayer : '',
       currentTurn: state ? state.currentTurn : 0,
@@ -110,8 +110,22 @@ const Game: React.FunctionComponent<Props> = ({
       box: state ? state.box : null,
       table: { items: [
         ...(state
-          ? state.table.items.map((item) => item.id === toMove.id ? toMove : item)
-          : []),
+          ? state.table.items.map((i) => i.id === item.id ? item : i)
+          : [])
+      ], },
+    }));
+  };
+
+  const removeItem = (item: TableItem) => {
+    setGame((state) => ({
+      currentPlayer: state ? state.currentPlayer : '',
+      currentTurn: state ? state.currentTurn : 0,
+      players: state ? state.players : [],
+      box: state ? state.box : null,
+      table: { items: [
+        ...(state
+          ? state.table.items.filter((i) => i.id !== item.id)
+          : [])
       ], },
     }));
   };
@@ -132,7 +146,7 @@ const Game: React.FunctionComponent<Props> = ({
       />
       <DndProvider backend={HTML5Backend}>
         <Table
-          onDrop={moveItem}
+          onDrop={updateItem}
           onClick={(position: DraggablePosition) => {
             setContextMenuPosition(isComponentsOpen ? contextMenuPosition : position);
             setIsComponentsOpen(state => !state);
@@ -145,7 +159,10 @@ const Game: React.FunctionComponent<Props> = ({
             >
               <Component
                 name={item.component.name}
+                item={item}
+                removeItem={() => removeItem(item)}
                 type={item.componentType}
+                updateItem={updateItem}
               />
             </Draggable>
           )) : null}
