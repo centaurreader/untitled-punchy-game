@@ -24,13 +24,11 @@ const Table: React.FC<{
         || { x: 0, y: 0, };
       onDrop(
         {
-          id: item.id,
+          ...item,
           position: {
             x: Math.round(item.position.x + delta.x),
             y: Math.round(item.position.y + delta.y),
           },
-          component: item.component,
-          componentType: item.componentType,
         },
       );
     },

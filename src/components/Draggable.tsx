@@ -10,11 +10,8 @@ const Draggable: React.FC<{
   const type = 'game-item';
   const [{ isDragging }, drag] = useDrag({
     item: {
-      id: item.id,
+      ...item,
       type,
-      position: item.position,
-      component: item.component,
-      componentType: item.componentType,
     },
     collect: (monitor) => ({
       isDragging: !!monitor.isDragging(),

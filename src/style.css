@@ -110,6 +110,9 @@ h1, h2 {
   outline: none;
   cursor: pointer;
 }
+.context_menu--selection:disabled {
+  opacity: 0.5;
+}
 
 .modal {
   position: absolute;

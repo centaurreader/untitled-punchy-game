@@ -151,6 +151,7 @@ const Game: React.FunctionComponent<Props> = ({
             game={game.box}
             isOpen={isComponentsOpen}
             position={contextMenuPosition}
+            table={game.table}
           />
           {isPlayersOpen
             ? <PlayersMenu game={game} playerId={playerId} closeMenu={() => { setIsPlayersOpen(false); }} />

@@ -13,7 +13,8 @@ const ComponentMenu: React.FC<{
   game: Box | null;
   isOpen: boolean;
   position: DraggablePosition;
-}> = ({ addItem, game, isOpen, position, }) => {
+  table: Table;
+}> = ({ addItem, game, isOpen, position, table, }) => {
   const [menuContent, setMenuContent] = useState<Array<Content>>([
     {
       content: game?.componentGroups ?? [],
@@ -62,6 +63,7 @@ const ComponentMenu: React.FC<{
                 key={componentGroup.id}
                 onSelect={pushMenuContent}
                 type={list.type}
+                table={table}
               />
             ))}
           </ul>
