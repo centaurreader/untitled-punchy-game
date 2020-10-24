@@ -35,10 +35,11 @@ const Component: React.FC<{
   }, [setIsControlsVisible]);
 
   useEffect(() => {
+    if (item.value === value) return;
     setIsValueChanging(true);
     setTimeout(() => {
-      setIsValueChanging(false);
       setValue(item.value);
+      setIsValueChanging(false);
     }, 300);
   }, [item.value]);
 
