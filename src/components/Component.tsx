@@ -31,8 +31,8 @@ const Component: React.FC<{
       }
     };
     document.addEventListener('click', listener);
-    return document.removeEventListener('click', listener)
-  }, [setIsControlsVisible]);
+    return () => document.removeEventListener('click', listener);
+  }, []);
 
   useEffect(() => {
     if (item.value === value) return;
