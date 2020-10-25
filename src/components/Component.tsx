@@ -4,17 +4,19 @@ import React, {
   useEffect,
 } from 'react';
 import CardsControls from './CardsControls';
+import DetailsComponent from './DetailsComponent';
 import DiceControls from './DiceControls';
 
 const Component: React.FC<{
   item: TableItem;
   name: string;
+  onOpen: () => void;
   removeItem: () => void;
   type: string;
   updateItem: (item: TableItem) => void;
 }> = ({
   item,
-  name,
+  onOpen,
   removeItem,
   type,
   updateItem,
@@ -22,12 +24,14 @@ const Component: React.FC<{
   const [isValueChanging, setIsValueChanging] = useState(false);
   const [value, setValue] = useState(item.value);
   const [isControlsVisible, setIsControlsVisible] = useState(false);
+  const [isDetailsVisible, setIsDetailsVisible] = useState(false);
   const menu = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const listener = (event: MouseEvent) => {
       if (!menu?.current?.contains(event.target as Element)) { 
         setIsControlsVisible(false);
+        setIsDetailsVisible(false);
       }
     };
     document.addEventListener('click', listener);
@@ -55,11 +59,15 @@ const Component: React.FC<{
       default:
         return styles;
     }
-  }
+  };
+
+  const showDetails = (e: React.MouseEvent) => {
+    onOpen();
+    setIsDetailsVisible(true);
+  };
 
   const showControls = (e: React.MouseEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
+    onOpen();
     setIsControlsVisible(true);
   };
 
@@ -79,13 +87,15 @@ const Component: React.FC<{
   const ControlsComponent = getControls();
 
   return (
-    <div ref={menu} onClick={e => e.stopPropagation()}>
-      <button className={getStyles()} type="button" onClick={showControls}>
+    <div className="component_container" ref={menu} onClick={e => e.stopPropagation()}>
+      <div className={getStyles()}>
         <span className="component_value">{isValueChanging ? '...' : value}</span>
-        <div className="component_menu">
-          {name}
-        </div>
-      </button>
+        <button type="button" className="component_menu_button" onClick={showDetails}>i</button>
+        <button type="button" className="component_controls_button" onClick={showControls}>menu</button>
+      </div>
+      <div className={`component_details ${isDetailsVisible ? 'component_details-open' : ''}`}>
+        <DetailsComponent item={item} />
+      </div>
       <div className={`component_controls ${isControlsVisible ? 'component_controls-open' : ''}`}>
         {ControlsComponent ? (
           <ControlsComponent

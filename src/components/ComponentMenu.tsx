@@ -62,8 +62,8 @@ const ComponentMenu: React.FC<{
                 componentGroup={componentGroup}
                 key={componentGroup.id}
                 onSelect={pushMenuContent}
-                type={list.type}
                 table={table}
+                {...('type' in list) ? { type: list.type } : {}}
               />
             ))}
           </ul>

@@ -6,7 +6,7 @@ const ComponentMenuListItem: React.FC<{
   addItem: (item: TableItem) => void;
   componentGroup: ComponentGroup|Component;
   onSelect: (content: Content) => void;
-  type: ComponentTypes;
+  type?: ComponentTypes;
   table: Table;
 }> = ({ addItem, componentGroup, onSelect, type, table, }) => {
   const toggleGroup = () => {
@@ -25,6 +25,7 @@ const ComponentMenuListItem: React.FC<{
         id: nanoid(),
         componentType: type,
         componentId: componentGroup.id,
+        value: type === 'Cards' ? componentGroup.name : '1',
       });
   };
 

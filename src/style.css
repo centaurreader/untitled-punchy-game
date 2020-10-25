@@ -136,33 +136,58 @@ h1, h2 {
   display: flex;
 }
 
+.component_container { padding-bottom: 24px; }
 .component {
   position: relative;
   border: none;
   outline: none;
 }
-.component_menu {
+.component_menu_button {
+  outline: none;
   position: absolute;
-  bottom: -5%;
+  top: 103%;
   right: -15%;
   background-color: gray;
   border-radius: 1rem;
+  border: none;
   box-shadow: 0 2px 2px 0px rgba(0,0,0,0.2);
-  opacity: 0;
   position: absolute;
+  opacity: 0;
   transform: scale(0);
   overflow: hidden;
-  padding: .25rem;
+  padding: .25rem .5rem;
   font-size: .65rem;
   color: whitesmoke;
   transform-origin: 0 0;
+  font-family: serif;
+  font-style: italic;
 }
-.component:hover .component_menu {
+.component_container:hover .component_controls_button,
+.component_container:hover .component_menu_button {
   opacity: 1;
   transform: scale(1);
   transition: transform .125s;
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+.component_controls_button {
+  outline: none;
+  position: absolute;
+  top: 103%;
+  left: -15%;
+  background-color: gray;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 2px 2px 0px rgba(0,0,0,0.2);
+  position: absolute;
+  opacity: 0;
+  transform: scale(0);
+  overflow: hidden;
+  padding: .25rem .5rem;
+  font-size: .65rem;
+  color: whitesmoke;
+  transform-origin: 0 0;
+}
+.component_details,
 .component_controls {
   background-color: white;
   border-radius: 1rem;
@@ -179,6 +204,7 @@ h1, h2 {
   top: 50%;
   left: 50%;
 }
+.component_details-open,
 .component_controls-open {
   opacity: 1;
   transform: scale(1) translate(-50%, -50%);
@@ -192,6 +218,7 @@ h1, h2 {
   text-align: left;
 }
 .component_control {
+  outline: none;
   border: none;
   background-color: cadetblue;
   font-size: .65rem;
@@ -219,4 +246,34 @@ h1, h2 {
   font-size: 1.25rem;
   font-weight: 700;
   color: white;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.component-cards .component_value {
+  display: inline-block;
+  padding: .5rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: midnightblue;
+}
+
+.property_list {
+  list-style-type: none;
+  padding: 1rem;
+  margin: 0;
+  font-size: .85rem;
+  overflow-y: auto;
+  height: 100%;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.property_list::-webkit-scrollbar {
+  display: none;
+}
+.property_list_item {
+  margin-bottom: .5rem;
 }

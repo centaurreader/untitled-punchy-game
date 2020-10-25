@@ -39,6 +39,7 @@ const Game: React.FunctionComponent<Props> = ({
   const [game, setGame] = useState<Game | undefined>(undefined);
   const [isComponentsOpen, setIsComponentsOpen] = useState<boolean>(false);
   const [isPlayersOpen, setIsPlayersOpen] = useState<boolean>(false);
+  const [isAnotherMenuOpen, setIsAnotherMenuOpen] = useState(false);
 
   useEffect(() => {
     function documentDataToGame(documentData: firebase.firestore.DocumentData): Game {
@@ -148,8 +149,12 @@ const Game: React.FunctionComponent<Props> = ({
         <Table
           onDrop={updateItem}
           onClick={(position: DraggablePosition) => {
-            setContextMenuPosition(isComponentsOpen ? contextMenuPosition : position);
-            setIsComponentsOpen(state => !state);
+            if (!isAnotherMenuOpen) {
+              setContextMenuPosition(isComponentsOpen ? contextMenuPosition : position);
+              setIsComponentsOpen(state => !state);
+            } else {
+              setIsAnotherMenuOpen(false);
+            }
           }}
         >
           {game.table ? game.table.items.map((item) => (
@@ -158,8 +163,12 @@ const Game: React.FunctionComponent<Props> = ({
               item={item}
             >
               <Component
-                name={item.component.name}
                 item={item}
+                name={item.component.name}
+                onOpen={() => {
+                  setIsComponentsOpen(false);
+                  setIsAnotherMenuOpen(true);
+                }}
                 removeItem={() => removeItem(item)}
                 type={item.componentType}
                 updateItem={updateItem}
