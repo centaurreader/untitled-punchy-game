@@ -12,12 +12,18 @@ const DiceControls: React.FC<{
   removeItem,
   updateItem,
 }) => {
+  const getFacesFromProperties = (): Array<string> => 'properties' in item.component
+    ? item.component.properties.find(p => p.name === 'faces')?.value as Array<string>
+    : [];
+
+  const getFaceValueByIndex = (index: number) => getFacesFromProperties()[index];
+
   const roll = (event: React.MouseEvent) => {
     event.stopPropagation();
     const random = new Random();
     updateItem({
       ...item,
-      value: random.integer(1, 8).toString(),
+      value: getFaceValueByIndex(random.integer(1, 8)),
     });
     closeMenu();
   };

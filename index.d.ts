@@ -48,7 +48,7 @@ interface ComponentGroup {
 
 interface Property {
   name: string;
-  value: string|number;
+  value: string|Array<string>|number;
   id: string;
 }
 
