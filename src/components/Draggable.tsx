@@ -29,6 +29,7 @@ const Draggable: React.FC<{
         position: 'absolute',
         left: item.position.x,
         top: item.position.y,
+        zIndex: item.position.z,
         border: 0,
         backgroundColor: 'transparent',
         outline: 'none',

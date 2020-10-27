@@ -9,13 +9,21 @@ interface DroppedItem extends DragObjectWithType {
 }
 
 const Table: React.FC<{
+  items: Array<TableItem>;
   onClick: (position: DraggablePosition) => void;
   onDrop: any;
 }> = ({
+  items,
   children,
   onClick,
   onDrop,
 }) => {
+  const findHighestZIndex = () => {
+    return items.reduce((nextZIndex, item) => {
+      return item.position.z > nextZIndex ? item.position.z : nextZIndex;
+    }, 1);
+  };
+
   const [, drop] = useDrop({
     accept: 'game-item',
     drop: (item: DroppedItem, monitor) => {
@@ -27,6 +35,7 @@ const Table: React.FC<{
           position: {
             x: Math.round(item.position.x + delta.x),
             y: Math.round(item.position.y + delta.y),
+            z: findHighestZIndex() + 1,
           },
         },
       );
@@ -41,6 +50,7 @@ const Table: React.FC<{
     onClick({
       x: event.clientX,
       y: event.clientY,
+      z: 1,
     });
   };
 

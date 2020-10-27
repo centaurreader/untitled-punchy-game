@@ -147,6 +147,7 @@ const Game: React.FunctionComponent<Props> = ({
       />
       <DndProvider backend={HTML5Backend}>
         <Table
+          items={game.table.items}
           onDrop={updateItem}
           onClick={(position: DraggablePosition) => {
             if (!isAnotherMenuOpen) {

@@ -26,6 +26,7 @@ interface Draggable {
 interface DraggablePosition {
   x: number;
   y: number;
+  z: number;
 }
 
 // Game Defintion

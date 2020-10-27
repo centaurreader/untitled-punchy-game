@@ -21,8 +21,6 @@ const Component: React.FC<{
   type,
   updateItem,
 }) => {
-  const [isValueChanging, setIsValueChanging] = useState(false);
-  const [value, setValue] = useState(item.value);
   const [isControlsVisible, setIsControlsVisible] = useState(false);
   const [isDetailsVisible, setIsDetailsVisible] = useState(false);
   const menu = useRef<HTMLDivElement>(null);
@@ -37,15 +35,6 @@ const Component: React.FC<{
     document.addEventListener('click', listener);
     return () => document.removeEventListener('click', listener);
   }, []);
-
-  useEffect(() => {
-    if (item.value === value) return;
-    setIsValueChanging(true);
-    setTimeout(() => {
-      setValue(item.value);
-      setIsValueChanging(false);
-    }, 300);
-  }, [item.value]);
 
   const getStyles = () => {
     let styles = 'component';
@@ -89,7 +78,7 @@ const Component: React.FC<{
   return (
     <div className="component_container" ref={menu} onClick={e => e.stopPropagation()}>
       <div className={getStyles()}>
-        <span className="component_value">{isValueChanging ? '...' : value}</span>
+        <span className="component_value">{item.value}</span>
         <button type="button" className="component_menu_button" onClick={showDetails}>i</button>
         <button type="button" className="component_controls_button" onClick={showControls}>menu</button>
       </div>

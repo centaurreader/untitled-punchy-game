@@ -6,12 +6,10 @@ const DetailsComponent: React.FC<{ item: TableItem; }> = ({
   return (
     <ul className="property_list">
       {'properties' in item.component ? item.component?.properties.map((p) => (
-        <>
-          <li className="property_list_item">
-            <strong>{p.name}</strong><br />
-            {Array.isArray(p.value) ? p.value.join(', ').toString() : p.value}
-          </li>
-        </>
+        <li key={p.id} className="property_list_item">
+          <strong>{p.name}</strong><br />
+          {Array.isArray(p.value) ? p.value.join(', ').toString() : p.value}
+        </li>
       )) : null}
     </ul>
   );
