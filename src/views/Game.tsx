@@ -35,7 +35,7 @@ const Game: React.FunctionComponent<Props> = ({
   },
 }) => {
   const [contextMenuPosition, setContextMenuPosition] = useState<DraggablePosition>({ x: 0, y: 0 });
-  const [playerId, setPlayerId] = useState<string>(state.playerId);
+  const [playerId, _] = useState<string>(state?.playerId);
   const [game, setGame] = useState<Game | undefined>(undefined);
   const [isComponentsOpen, setIsComponentsOpen] = useState<boolean>(false);
   const [isPlayersOpen, setIsPlayersOpen] = useState<boolean>(false);
