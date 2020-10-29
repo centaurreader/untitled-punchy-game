@@ -1,6 +1,3 @@
-import firebase from 'firebase';
-import 'firebase/firestore';
-
 const firebaseConfig = {
   apiKey: "AIzaSyCfVHHk-StotV9omjcBy56ngtniVX4vdu4",
   authDomain: "untitled-punchy-game.firebaseapp.com",
@@ -12,6 +9,6 @@ const firebaseConfig = {
   measurementId: "G-Y8Y9EDH8E5"
 };
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+window.firebase.initializeApp(firebaseConfig);
 
-export const db = firebase.firestore();
+export const db = window.firebase.firestore();
