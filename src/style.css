@@ -64,7 +64,7 @@ h1, h2 {
   height: 18vh;
   width: 200px;
   overflow: hidden;
-  z-index: 3;
+  z-index: 5000;
 }
 .context_menu-open {
   opacity: 1;
@@ -141,6 +141,20 @@ h1, h2 {
   position: relative;
   border: none;
   outline: none;
+}
+.component-selected {
+  border: 2px solid midnightblue;
+}
+.component_select_button {
+  outline: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  border: none;
+  width: 100%;
 }
 .component_menu_button {
   outline: none;

@@ -2,6 +2,11 @@
 interface Player {
   name: string;
   id: string;
+  selection?: Array<ItemSelection>;
+  color?: string;
+}
+interface ItemSelection {
+  componentId: string;
 }
 interface Game {
   players: Array<Player>;
@@ -16,7 +21,6 @@ interface Table {
 interface TableItem extends Draggable {
   component: Component|ComponentGroup;
   componentType: ComponentTypes|null;
-  componentId: string;
   value: string;
 }
 interface Draggable {

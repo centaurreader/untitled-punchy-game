@@ -40,6 +40,26 @@ const Game: React.FunctionComponent<Props> = ({
   const [isComponentsOpen, setIsComponentsOpen] = useState<boolean>(false);
   const [isPlayersOpen, setIsPlayersOpen] = useState<boolean>(false);
   const [isAnotherMenuOpen, setIsAnotherMenuOpen] = useState(false);
+  const [multiSelectEnabled, setMultiSelectEnabled] = useState(false);
+
+  useEffect(() => {
+    function handleKeyDown(ev: KeyboardEvent) {
+      if (ev.key === 'Shift') {
+        setMultiSelectEnabled(true);
+      }
+    }
+    function handleKeyUp(ev: KeyboardEvent) {
+      if (ev.key === 'Shift') {
+        setMultiSelectEnabled(false);
+      }
+    }
+    document.addEventListener('keydown', handleKeyDown);
+    document.addEventListener('keyup', handleKeyUp);
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+      document.removeEventListener('keyup', handleKeyUp);
+    };
+  })
 
   useEffect(() => {
     function documentDataToGame(documentData: firebase.firestore.DocumentData): Game {
@@ -131,6 +151,38 @@ const Game: React.FunctionComponent<Props> = ({
     }));
   };
 
+  const selectItem = (item: TableItem) => {
+    setIsComponentsOpen(false);
+    const player = game?.players.find(p => p.id === playerId);
+    if (!player) {
+      return;
+    }
+    setGame(state => (state ? {
+      ...state,
+      players: state?.players.map(p => p.id === playerId ? {
+        ...player,
+        selection: [
+          ...((multiSelectEnabled && p.selection) || []),
+          { componentId: item.id, },
+        ],
+      } : p),
+    } : undefined));
+  }
+
+  const resetSelections = () => {
+    const player = game?.players.find(p => p.id === playerId);
+    if (!player) {
+      return;
+    }
+    setGame(state => (state ? {
+      ...state,
+      players: state?.players.map(p => p.id === playerId ? {
+        ...player,
+        selection: [],
+      } : p),
+    } : undefined));
+  };
+
   if (!game) {
     return null;
   }
@@ -150,6 +202,7 @@ const Game: React.FunctionComponent<Props> = ({
           items={game.table.items}
           onDrop={updateItem}
           onClick={(position: DraggablePosition) => {
+            resetSelections();
             if (!isAnotherMenuOpen) {
               setContextMenuPosition(isComponentsOpen ? contextMenuPosition : position);
               setIsComponentsOpen(state => !state);
@@ -164,6 +217,7 @@ const Game: React.FunctionComponent<Props> = ({
               item={item}
             >
               <Component
+                isSelected={game.players.some(p => p.selection?.find(s => s.componentId === item.id))}
                 item={item}
                 name={item.component.name}
                 onOpen={() => {
@@ -171,6 +225,7 @@ const Game: React.FunctionComponent<Props> = ({
                   setIsAnotherMenuOpen(true);
                 }}
                 removeItem={() => removeItem(item)}
+                selectItem={selectItem}
                 type={item.componentType}
                 updateItem={updateItem}
               />

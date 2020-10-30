@@ -9,15 +9,19 @@ import DiceControls from './DiceControls';
 
 const Component: React.FC<{
   item: TableItem;
+  isSelected: boolean;
   name: string;
   onOpen: () => void;
   removeItem: () => void;
+  selectItem: (item: TableItem) => void;
   type: string|null;
   updateItem: (item: TableItem) => void;
 }> = ({
+  isSelected,
   item,
   onOpen,
   removeItem,
+  selectItem,
   type,
   updateItem,
 }) => {
@@ -40,14 +44,20 @@ const Component: React.FC<{
     let styles = 'component';
     switch (type) {
       case 'Dice': {
-        return `${styles} component-dice`;
+        styles = `${styles} component-dice`;
+        break;
       }
       case 'Cards': {
-        return `${styles} component-cards`;
+        styles = `${styles} component-cards`;
+        break;
       }
       default:
-        return styles;
+        break;
     }
+    if (isSelected) {
+      styles = `${styles} component-selected`;
+    }
+    return styles;
   };
 
   const showDetails = (e: React.MouseEvent) => {
@@ -58,6 +68,10 @@ const Component: React.FC<{
   const showControls = (e: React.MouseEvent) => {
     onOpen();
     setIsControlsVisible(true);
+  };
+
+  const select = () => {
+    selectItem(item);
   };
 
   const getControls = () => {
@@ -78,6 +92,7 @@ const Component: React.FC<{
   return (
     <div className="component_container" ref={menu} onClick={e => e.stopPropagation()}>
       <div className={getStyles()}>
+        <button type="button" className="component_select_button" onClick={select} />
         <span className="component_value">{item.value}</span>
         <button type="button" className="component_menu_button" onClick={showDetails}>i</button>
         <button type="button" className="component_controls_button" onClick={showControls}>menu</button>

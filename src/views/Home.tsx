@@ -2,6 +2,7 @@ import React, {
   FormEvent,
   useState,
 } from 'react';
+import { Random } from 'random-js';
 import { RouteComponentProps  } from 'react-router';
 import { nanoid } from 'nanoid';
 import { db } from '../services/Database';
@@ -14,6 +15,18 @@ const Home: React.FunctionComponent<RouteComponentProps<any>> = ({
   const [gameId, setGameId] = useState('');
   const [joinName, setJoinName] = useState('');
   const [createName, setCreateName] = useState('');
+
+  const createPlayer = (name: string): Player => {
+    function getColor() {
+      return new Random().integer(0, 255);
+    }
+    return {
+      name,
+      id: nanoid(),
+      selection: [],
+      color: `rgb(${getColor()}, ${getColor()}, ${getColor()})`,
+    };
+  };
 
   const redirectToGameInstance = (instanceId: string, playerId: string) => {
     history.push({
@@ -40,7 +53,7 @@ const Home: React.FunctionComponent<RouteComponentProps<any>> = ({
         currentTurn: data.currentTurn,
         players: [
           ...data.players,
-          { name: joinName, id: playerId, },
+          createPlayer(joinName),
         ],
         box: data.box,
         table: { items: [], },
@@ -62,10 +75,7 @@ const Home: React.FunctionComponent<RouteComponentProps<any>> = ({
     if (!box) {
       alert('need a resource file');
     }
-    const player = {
-      name: createName,
-      id: nanoid(),
-    };
+    const player = createPlayer(createName);
     const game: Game = {
       currentPlayer: player.id,
       currentTurn: 0,

@@ -25,13 +25,12 @@ const ComponentMenuListItem: React.FC<{
         },
         id: nanoid(),
         componentType: type || null,
-        componentId: componentGroup.id,
         value: type === 'Cards' ? componentGroup.name : '1',
       });
   };
 
   const isUnlimitedQuantity = () => "quantity" in componentGroup && componentGroup.quantity.toString() === '-1';
-  const isInStock = () => "quantity" in componentGroup && componentGroup.quantity > table.items.filter(i => i.componentId === componentGroup.id && i.componentType === type).length;
+  const isInStock = () => "quantity" in componentGroup && componentGroup.quantity > table.items.filter(i => i.component.id === componentGroup.id && i.componentType === type).length;
 
   const isSelectable = () =>
     "quantity" in componentGroup
