@@ -225,6 +225,7 @@ const Game: React.FunctionComponent<Props> = ({
                   setIsAnotherMenuOpen(true);
                 }}
                 removeItem={() => removeItem(item)}
+                selectColor={game.players.find(player => player.id === game.currentPlayer)?.color}
                 selectItem={selectItem}
                 type={item.componentType}
                 updateItem={updateItem}

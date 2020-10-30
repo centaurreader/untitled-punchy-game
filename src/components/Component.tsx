@@ -13,6 +13,7 @@ const Component: React.FC<{
   name: string;
   onOpen: () => void;
   removeItem: () => void;
+  selectColor?: string;
   selectItem: (item: TableItem) => void;
   type: string|null;
   updateItem: (item: TableItem) => void;
@@ -21,6 +22,7 @@ const Component: React.FC<{
   item,
   onOpen,
   removeItem,
+  selectColor = 'midnightblue',
   selectItem,
   type,
   updateItem,
@@ -41,6 +43,13 @@ const Component: React.FC<{
   }, []);
 
   const getStyles = () => {
+    if (isSelected) {
+      return { borderColor: selectColor, };
+    }
+    return {};
+  };
+
+  const getClasses = () => {
     let styles = 'component';
     switch (type) {
       case 'Dice': {
@@ -91,7 +100,7 @@ const Component: React.FC<{
 
   return (
     <div className="component_container" ref={menu} onClick={e => e.stopPropagation()}>
-      <div className={getStyles()}>
+      <div className={getClasses()} style={getStyles()}>
         <button type="button" className="component_select_button" onClick={select} />
         <span className="component_value">{item.value}</span>
         <button type="button" className="component_menu_button" onClick={showDetails}>i</button>
