@@ -15,7 +15,7 @@ interface Table {
 }
 interface TableItem extends Draggable {
   component: Component|ComponentGroup;
-  componentType: ComponentTypes;
+  componentType: ComponentTypes|null;
   componentId: string;
   value: string;
 }
@@ -59,4 +59,14 @@ interface Component {
   quantity: number;
   properties: Array<Property>;
   id: string;
+}
+
+// Firebase b/c we don't have it installed
+module firebase {
+  module firestore {
+    interface DocumentData {
+      id: string;
+      data: () => any;
+    }
+  }
 }

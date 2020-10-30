@@ -12,7 +12,7 @@ const Component: React.FC<{
   name: string;
   onOpen: () => void;
   removeItem: () => void;
-  type: string;
+  type: string|null;
   updateItem: (item: TableItem) => void;
 }> = ({
   item,

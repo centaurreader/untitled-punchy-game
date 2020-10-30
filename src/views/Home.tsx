@@ -32,7 +32,7 @@ const Home: React.FunctionComponent<RouteComponentProps<any>> = ({
       return;
     }
     const docRef = db.collection('games').doc(gameId);
-    docRef.get().then((doc) => {
+    docRef.get().then((doc: firebase.firestore.DocumentData) => {
       const data = doc.data() ?? {};
       const playerId = nanoid();
       const game: Game = {
@@ -74,7 +74,7 @@ const Home: React.FunctionComponent<RouteComponentProps<any>> = ({
       table: { items: [], },
     };
     db.collection('games').add(game)
-    .then((docRef) => {
+    .then((docRef: firebase.firestore.DocumentData) => {
       redirectToGameInstance(docRef.id, player.id);
     });
   };

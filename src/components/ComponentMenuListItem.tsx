@@ -21,9 +21,10 @@ const ComponentMenuListItem: React.FC<{
         position: {
           x: 0,
           y: 0,
+          z: 1,
         },
         id: nanoid(),
-        componentType: type,
+        componentType: type || null,
         componentId: componentGroup.id,
         value: type === 'Cards' ? componentGroup.name : '1',
       });

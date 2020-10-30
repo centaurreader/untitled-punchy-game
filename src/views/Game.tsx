@@ -34,7 +34,7 @@ const Game: React.FunctionComponent<Props> = ({
     },
   },
 }) => {
-  const [contextMenuPosition, setContextMenuPosition] = useState<DraggablePosition>({ x: 0, y: 0 });
+  const [contextMenuPosition, setContextMenuPosition] = useState<DraggablePosition>({ x: 0, y: 0, z: 0, });
   const [playerId, _] = useState<string>(state?.playerId);
   const [game, setGame] = useState<Game | undefined>(undefined);
   const [isComponentsOpen, setIsComponentsOpen] = useState<boolean>(false);
@@ -54,10 +54,10 @@ const Game: React.FunctionComponent<Props> = ({
     }
 
     const docRef = db.collection('games').doc(id);
-    docRef.get().then((doc) => {
+    docRef.get().then((doc: firebase.firestore.DocumentData) => {
       setGame(documentDataToGame(doc));
     });
-    docRef.onSnapshot((doc) => {
+    docRef.onSnapshot((doc: firebase.firestore.DocumentData) => {
       setGame(documentDataToGame(doc));
     });
   }, []);
@@ -69,7 +69,7 @@ const Game: React.FunctionComponent<Props> = ({
 
   const endTurn = () => {
     const docRef = db.collection('games').doc(id);
-    docRef.get().then((doc) => {
+    docRef.get().then((doc: firebase.firestore.DocumentData) => {
       const data = doc.data();
       if (!data) {
         return;
