@@ -127,7 +127,8 @@ h1, h2 {
 
 .game_board {
   flex: 1;
-  position: relative;
+  height: 100%;
+  width: 100%;
 }
 
 .box {
@@ -290,4 +291,11 @@ h1, h2 {
 }
 .property_list_item {
   margin-bottom: .5rem;
+}
+
+.selection_box {
+  position: absolute;
+  background-color: cadetblue;
+  opacity: 0.65;
+  z-index: 30000;
 }

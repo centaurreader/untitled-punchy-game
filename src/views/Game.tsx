@@ -1,4 +1,5 @@
 import React, {
+  useCallback,
   useEffect,
   useState,
 } from 'react';
@@ -13,6 +14,15 @@ import MainMenu from '../components/MainMenu';
 import Table from '../components/Table';
 import Draggable from '../components/Draggable';
 import Component from '../components/Component';
+
+const debounce = <T extends (...args: any[]) => any>(fn: T, wait: number) => {
+  let timeout: number = 0;
+  const debounced = (...args: Parameters<T>) => {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => fn(...args), wait);
+  };
+  return debounced as (...args: Parameters<T>) => ReturnType<T>;
+};
 
 interface Props extends RouteComponentProps<
   {
@@ -59,7 +69,7 @@ const Game: React.FunctionComponent<Props> = ({
       document.removeEventListener('keydown', handleKeyDown);
       document.removeEventListener('keyup', handleKeyUp);
     };
-  })
+  }, []);
 
   useEffect(() => {
     function documentDataToGame(documentData: firebase.firestore.DocumentData): Game {
@@ -83,9 +93,16 @@ const Game: React.FunctionComponent<Props> = ({
   }, []);
 
   useEffect(() => {
-    const docRef = db.collection('games').doc(id);
-    docRef.update(game || {});
+    updateGame(game);
   }, [game]);
+
+  const updateGame = useCallback(
+    debounce((gameUpdate) => {
+      const docRef = db.collection('games').doc(id);
+      docRef.update(gameUpdate || {});
+    }, 125),
+    []
+  );
 
   const endTurn = () => {
     const docRef = db.collection('games').doc(id);
@@ -151,12 +168,22 @@ const Game: React.FunctionComponent<Props> = ({
     }));
   };
 
-  const selectItem = (item: TableItem) => {
+  const selectItem = (item: TableItem|null) => {
+    if (!item) {
+      return;
+    }
     setIsComponentsOpen(false);
+
     const player = game?.players.find(p => p.id === playerId);
     if (!player) {
       return;
     }
+    const alreadySelected = game?.players.some((p) =>
+      p.selection?.some(s => s.componentId === item.id));
+    if (alreadySelected) {
+      return;
+    }
+    
     setGame(state => (state ? {
       ...state,
       players: state?.players.map(p => p.id === playerId ? {
@@ -169,10 +196,31 @@ const Game: React.FunctionComponent<Props> = ({
     } : undefined));
   }
 
-  const resetSelections = () => {
+  const selectItems = (items: Array<TableItem|undefined>) => {
     const player = game?.players.find(p => p.id === playerId);
     if (!player) {
       return;
+    }
+    const updatedSelections: Array<ItemSelection> = items.filter((item: TableItem|undefined) => item).map((item) => ({ componentId: item?.id || '', }));
+    if (JSON.stringify(updatedSelections) === JSON.stringify(player.selection)) {
+      return;
+    }
+    setGame(state => (state ? {
+      ...state,
+      players: state?.players.map(p => p.id === playerId ? {
+        ...player,
+        selection: updatedSelections,
+      } : p),
+    } : undefined));
+  };
+
+  const resetSelections = () => {
+    const player = game?.players.find(p => p.id === playerId);
+    if (!player) {
+      return false;
+    }
+    if (!player.selection?.length) {
+      return false;
     }
     setGame(state => (state ? {
       ...state,
@@ -181,6 +229,7 @@ const Game: React.FunctionComponent<Props> = ({
         selection: [],
       } : p),
     } : undefined));
+    return true;
   };
 
   if (!game) {
@@ -202,7 +251,9 @@ const Game: React.FunctionComponent<Props> = ({
           items={game.table.items}
           onDrop={updateItem}
           onClick={(position: DraggablePosition) => {
-            resetSelections();
+            if (resetSelections()) {
+              return;
+            }
             if (!isAnotherMenuOpen) {
               setContextMenuPosition(isComponentsOpen ? contextMenuPosition : position);
               setIsComponentsOpen(state => !state);
@@ -210,6 +261,8 @@ const Game: React.FunctionComponent<Props> = ({
               setIsAnotherMenuOpen(false);
             }
           }}
+          // onSelection={debounce(selectItems, 10)}
+          onSelection={selectItems}
         >
           {game.table ? game.table.items.map((item) => (
             <Draggable

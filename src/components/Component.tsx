@@ -79,7 +79,8 @@ const Component: React.FC<{
     setIsControlsVisible(true);
   };
 
-  const select = () => {
+  const select = (ev: MouseEvent) => {
+    ev.stopPropagation();
     selectItem(item);
   };
 
@@ -99,7 +100,7 @@ const Component: React.FC<{
   const ControlsComponent = getControls();
 
   return (
-    <div className="component_container" ref={menu} onClick={e => e.stopPropagation()}>
+    <div className="component_container" ref={menu}>
       <div className={getClasses()} style={getStyles()}>
         <button type="button" className="component_select_button" onClick={select} />
         <span className="component_value">{item.value}</span>
