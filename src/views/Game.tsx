@@ -78,6 +78,7 @@ const Game: React.FunctionComponent<Props> = ({
         currentPlayer: data.currentPlayer,
         currentTurn: data.currentTurn,
         players: data.players,
+        playerIds: data.playerIds,
         box: data.box,
         table: { items: data.table.items || [], },
       };
@@ -120,6 +121,7 @@ const Game: React.FunctionComponent<Props> = ({
         currentPlayer: nextPlayer.id,
         currentTurn: isRoundOver ? (data.currentTurn + 1) : data.currentTurn,
         players,
+        playerIds: data.playerIds,
         box: data.box,
         table: { items: [], },
       };
@@ -132,6 +134,7 @@ const Game: React.FunctionComponent<Props> = ({
       currentPlayer: state ? state.currentPlayer : '',
       currentTurn: state ? state.currentTurn : 0,
       players: state ? state.players : [],
+      playerIds: state ? state.playerIds : [],
       box: state ? state.box : null,
       table: { items: [
         ...state?.table?.items ?? [],
@@ -145,6 +148,7 @@ const Game: React.FunctionComponent<Props> = ({
       currentPlayer: state ? state.currentPlayer : '',
       currentTurn: state ? state.currentTurn : 0,
       players: state ? state.players : [],
+      playerIds: state ? state.playerIds : [],
       box: state ? state.box : null,
       table: { items: [
         ...(state
@@ -159,6 +163,7 @@ const Game: React.FunctionComponent<Props> = ({
       currentPlayer: state ? state.currentPlayer : '',
       currentTurn: state ? state.currentTurn : 0,
       players: state ? state.players : [],
+      playerIds: state ? state.playerIds : [],
       box: state ? state.box : null,
       table: { items: [
         ...(state

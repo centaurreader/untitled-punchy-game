@@ -1,7 +1,12 @@
 import React from 'react';
 import AuthContext from '../contexts/auth';
 
-const auth = <P extends object>(InnerComponent: React.ComponentType<P>) => (props: P) => {
+interface AuthProps {
+  isAuthenticated: boolean;
+  updateAuthState: (s: boolean) => void;
+}
+
+const auth = <P extends object>(InnerComponent: React.ComponentType<P>): React.FC<Omit<P, keyof AuthProps>> => (props: any) => {
   return (
     <AuthContext.Consumer>
       {context => (

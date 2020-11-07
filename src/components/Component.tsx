@@ -79,7 +79,7 @@ const Component: React.FC<{
     setIsControlsVisible(true);
   };
 
-  const select = (ev: MouseEvent) => {
+  const select = (ev: React.MouseEvent) => {
     ev.stopPropagation();
     selectItem(item);
   };
