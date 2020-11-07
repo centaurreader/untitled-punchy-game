@@ -10,6 +10,7 @@ interface ItemSelection {
 }
 interface Game {
   players: Array<Player>;
+  playerIds: string[];
   currentPlayer: Player.id;
   currentTurn: number;
   box: Box | null;

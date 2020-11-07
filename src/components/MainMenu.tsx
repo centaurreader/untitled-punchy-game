@@ -1,4 +1,6 @@
 import React from 'react';
+import authHoc from '../higherOrderComponents/auth.hoc';
+import Auth from '../services/Auth';
 
 const MainMenu: React.FC<{
   currentPlayer: Player|undefined;
@@ -7,6 +9,7 @@ const MainMenu: React.FC<{
   openPlayersMenu: () => void;
   playerId: string;
   title: string;
+  updateAuthState: (s: boolean) => void;
 }> = ({
   currentPlayer = {},
   endTurn,
@@ -14,7 +17,14 @@ const MainMenu: React.FC<{
   openPlayersMenu,
   playerId,
   title,
+  updateAuthState,
 }) => {
+
+  const signOut = () => {
+    Auth.signOut();
+    updateAuthState(false);
+  };
+
   return (
     <div className="main_menu">
       <div className="main_menu--control_row">
@@ -30,6 +40,13 @@ const MainMenu: React.FC<{
           >
             Players
           </button>
+          <button
+            type="button"
+            className="main_menu--control"
+            onClick={signOut}
+          >
+            Sign Out
+          </button>
         </div>
       </div>
       <div className="main_menu--info_row">
@@ -40,4 +57,4 @@ const MainMenu: React.FC<{
   );
 };
 
-export default MainMenu;
+export default authHoc(MainMenu);

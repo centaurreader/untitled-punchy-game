@@ -7,9 +7,16 @@ import { RouteComponentProps  } from 'react-router';
 import { nanoid } from 'nanoid';
 import { db } from '../services/Database';
 import InputResourceFile from '../components/InputResourceFile';
+import Auth from '../services/Auth';
+import authHoc from '../higherOrderComponents/auth.hoc';
 
-const Home: React.FunctionComponent<RouteComponentProps<any>> = ({
+interface Props extends RouteComponentProps<any> {
+  updateAuthState: (s: boolean) => void;
+}
+
+const Home: React.FC<Props> = ({
   history,
+  updateAuthState,
 }) => {
   const [box, setBox] = useState<null|Box>();
   const [gameId, setGameId] = useState('');
@@ -22,7 +29,7 @@ const Home: React.FunctionComponent<RouteComponentProps<any>> = ({
     }
     return {
       name,
-      id: nanoid(),
+      id: Auth.getCurrentUser().uid,
       selection: [],
       color: `rgb(${getColor()}, ${getColor()}, ${getColor()})`,
     };
@@ -47,19 +54,20 @@ const Home: React.FunctionComponent<RouteComponentProps<any>> = ({
     const docRef = db.collection('games').doc(gameId);
     docRef.get().then((doc: firebase.firestore.DocumentData) => {
       const data = doc.data() ?? {};
-      const playerId = nanoid();
+      const player = createPlayer(joinName);
       const game: Game = {
         currentPlayer: data.currentPlayer,
         currentTurn: data.currentTurn,
         players: [
           ...data.players,
-          createPlayer(joinName),
+          player,
         ],
+        playerIds: [player.id],
         box: data.box,
         table: { items: [], },
       };
       docRef.update(game).then(() => {
-        redirectToGameInstance(doc.id, playerId);
+        redirectToGameInstance(doc.id, player.id);
         history.push(`/games/${doc.id}`);
       });
     })
@@ -74,19 +82,28 @@ const Home: React.FunctionComponent<RouteComponentProps<any>> = ({
     }
     if (!box) {
       alert('need a resource file');
+      return;
     }
     const player = createPlayer(createName);
     const game: Game = {
       currentPlayer: player.id,
       currentTurn: 0,
       players: [player],
+      playerIds: [player.id],
       box: box || { name: '', componentGroups: [], },
       table: { items: [], },
     };
     db.collection('games').add(game)
     .then((docRef: firebase.firestore.DocumentData) => {
       redirectToGameInstance(docRef.id, player.id);
+    }).catch(() => {
+      console.log('wut');
     });
+  };
+
+  const signOut = () => {
+    Auth.signOut();
+    updateAuthState(false);
   };
 
   return (
@@ -114,8 +131,10 @@ const Home: React.FunctionComponent<RouteComponentProps<any>> = ({
         <InputResourceFile onLoad={(box: Box) => { setBox(box); }} />
         <button type="submit" onClick={createGame}>Create Game</button>
       </form>
+
+      <button type="button" onClick={signOut}>Sign Out</button>
     </>
   );
 };
 
-export default Home;
+export default authHoc(Home);
