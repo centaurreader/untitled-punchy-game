@@ -22,8 +22,12 @@ class GoogleAuth {
   signIn(): Promise<null> {
     if (!this.isAuthenticated()) {
       return (window as any).firebase.auth()
-        .signInWithPopup(this.provider).then(() => {
+        .signInWithPopup(this.provider)
+        .then(() => {
           return Promise.resolve(null);
+        })
+        .catch((err: any) => {
+          return Promise.reject(err);
         });
     }
     return Promise.resolve(null);
